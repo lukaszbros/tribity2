@@ -5,16 +5,7 @@
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 */
 
-@import "compass/css3";
-
-$baseGreen: #00c376;
-$baseBlue: #00aed9;
-$basePink: #e62799;
-$baseDark: #000000;
-
-$bgColor: #ffffff;
-
-$breakBase: 1000px;
+@import "config";
 
 $fontFamilyBase:"proxima-nova",sans-serif;
 
@@ -82,13 +73,15 @@ header {
   		}
 		#logo{
 			left: 0;
+			width: 350px;
 			font-size:2em;
 			font-weight: 700;
-			white-space: nowrap;		
+			cursor: pointer; 		
 			span { 
 				font-weight: 300;
 				font-size:0.8em;
 				margin-left:1%;
+				cursor: default;
 			}
 		}
 		#menu {
@@ -96,7 +89,6 @@ header {
 			width: 270px;
 			font-size: 1em;
 			font-weight: 700;
-			white-space: nowrap;			
 			a {
 				margin-left: 10%;
 				color: $baseDark;
@@ -112,10 +104,26 @@ header {
 				}				
 			}
 		}
+		@media screen and (max-width: $breakBaseMenu) {
+			height: 125px;
+  			#logo, #menu {
+  				position: relative;
+  				left:inherit;
+  				right:inherit;
+  				margin: auto;
+  				text-align:center; 
+  			}
+  			#logo {
+  				padding: 40px 0 20px 0;  			
+  			}
+			
+		}
 	}	
 }
 
 @import "home";
+
+@import "work";
 
 footer {
 	clear:both;
@@ -125,15 +133,14 @@ footer {
    		width:200px;
    		margin:auto;
    		text-align:center;
-   		color: #cccccc;
+   		color: $footerGrey;
   		p {
-  			color: #666666;
   			font-size: 1.5em;
   			-webkit-margin-before: 0.5em;
 			-webkit-margin-after: 0.5em;
   		}
   		#rights {
-  			font-size: 0.6em;
+  			font-size: 0.7em;
   		}
    	}
 }

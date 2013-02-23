@@ -1,0 +1,65 @@
+@import "config";
+
+#work_content {
+	text-align: center;
+	p {
+		font-size: 1.5em;
+	}
+}
+
+#project_container {
+	padding: 50px 0 50px 0;
+	@media screen and (max-width: $breakBase) {
+		width: 700px;
+		margin: auto;
+	}
+	@media screen and (max-width: $breakBaseWork) {
+		width: 350px;		
+	}
+}
+
+.project{
+	height: 400px;
+	width: 33%;
+	float: left;
+	padding: 10px 0 10px 0;
+	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+		border-right: 1px solid $footerGrey;
+	}
+	&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+		border-bottom: 1px solid $footerGrey;
+	}
+	
+	@media screen and (max-width: $breakBase) {
+		width: 333px;
+		&:nth-child(2), &:nth-child(4) {
+			border-right: none;
+		}
+		&:nth-child(3) {
+			border-right: 1px solid $footerGrey;
+		}
+		&:nth-child(4) {
+			border-bottom: 1px solid $footerGrey;
+		}
+	}
+	@media screen and (max-width: $breakBaseWork) {
+		&:nth-child(1), &:nth-child(3), &:nth-child(5) {
+			border-right: none;
+		}
+		&:nth-child(5) {
+			border-bottom: 1px solid $footerGrey;
+		}
+	}
+	
+	img {
+		height: 280px;
+		width: 280px;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1em;
+		color: $lightGrey;
+	}
+}

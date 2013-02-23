@@ -1,15 +1,30 @@
+@import "compass/css3";
+@import "config";
+
 #image_bar {
 	height: 430px;
 	width: 100%;
 	background-color: #666666;
 	position: relative;
+	@media screen and (max-width: $breakBase) {
+		height: 660px;
+	}
+	@media screen and (max-width: $breakBaseWork) {
+		height: 890px;
+	}
 	#image_top_bar {
 		height:6px;
 		background-color: #000000;
 		@include opacity(0.7);	
 	}
-	#work_bar, #work_content{
+	#work_bar, #work_list{
 		height: 230px;
+		@media screen and (max-width: $breakBase) {
+  			height: 460px;	
+  		}
+  		@media screen and (max-width: $breakBaseWork) {
+  			height: 690px;	
+  		}
 	} 
 	#work_bar {
 		position: absolute;
@@ -17,11 +32,12 @@
 		width: 100%;
 		background-color: #000000;
 		@include opacity(0.7);		
+		
 	}
-	#work_content {		
+	#work_list {		
 		position: relative;
 		top: 194px;
-		color: #ffffff;
+		color: $baseGrey;
   		.work_type {
   			width: 33%;	
   			float: left;
@@ -29,22 +45,33 @@
   			img {
   				height: 60px;
   				width: 100px;
-  				background-color:#00AED9;
   				padding-top: 25px;
   			}
   			h1 {
   				font-size: 1.5em;
+  				color: $footerGrey;
   			}
   			p {
-  				color: #aaaaaa;
+  				font-size: 1em;
+  				color: $lightGrey;
   			}
+  		}
+  		@media screen and (max-width: $breakBase) {
+  			width: 700px;
+  			margin: auto;
+  			.work_type {
+  				width: 350px;
+  			}	
+  		}
+  		@media screen and (max-width: $breakBaseWork) {
+  			width: 350px;
   		}
 	}
 }
 
 #content {
 	width: 100%;
-	color: #bbbbbb;
+	color: $lightGrey;
 	margin: 50px 0 50px 0;
 	text-align:center;
 	p {
