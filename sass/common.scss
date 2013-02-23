@@ -1,0 +1,141 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+
+@import "compass/css3";
+
+$baseGreen: #00c376;
+$baseBlue: #00aed9;
+$basePink: #e62799;
+$baseDark: #000000;
+
+$bgColor: #ffffff;
+
+$breakBase: 1000px;
+
+$fontFamilyBase:"proxima-nova",sans-serif;
+
+body{	
+	background: $bgColor;
+	font-family: $fontFamilyBase;
+	font-style: normal;
+	font-weight: 300;
+}
+
+a {
+  color: $baseGreen;
+  &:hover {
+    color: $basePink;
+   }
+}
+
+.ux {
+	color: $basePink;
+}
+.design {
+	color: $baseBlue;
+}
+.software {
+	color: $baseGreen;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	@media screen and (max-width: $breakBase) {
+    	width: 98%;
+    	margin-left: 1%;
+		margin-right: 1%;
+  	}	
+}
+
+header {
+	#top_bar {
+		width:100%;
+		#color1, #color2, #color3 {
+			height: 6px;
+			float: left;	
+		}
+		#color1 {
+			width: 45%;
+			background-color: $baseGreen;	
+		}
+		#color2 {
+			width: 35%;
+			background-color: $baseBlue;	
+		}
+		#color3 {
+			width: 20%;
+			background-color: $basePink;
+		}
+	}
+	
+	#title_bar {	
+		height: 75px;	
+		position: relative;
+  		#logo, #menu {  			
+			position: absolute;
+			bottom: 10px;	
+  		}
+		#logo{
+			left: 0;
+			font-size:2em;
+			font-weight: 700;
+			white-space: nowrap;		
+			span { 
+				font-weight: 300;
+				font-size:0.8em;
+				margin-left:1%;
+			}
+		}
+		#menu {
+			right: 0;
+			width: 270px;
+			font-size: 1em;
+			font-weight: 700;
+			white-space: nowrap;			
+			a {
+				margin-left: 10%;
+				color: $baseDark;
+				text-decoration: none;
+				&:nth-child(1):hover {
+					color: $basePink
+				}
+				&:nth-child(2):hover {
+					color: $baseBlue
+				}
+				&:nth-child(3):hover {
+					color: $baseGreen
+				}				
+			}
+		}
+	}	
+}
+
+@import "home";
+
+footer {
+	clear:both;
+   	height:120px;
+   	width: 100%;
+   	#footer_content {
+   		width:200px;
+   		margin:auto;
+   		text-align:center;
+   		color: #cccccc;
+  		p {
+  			color: #666666;
+  			font-size: 1.5em;
+  			-webkit-margin-before: 0.5em;
+			-webkit-margin-after: 0.5em;
+  		}
+  		#rights {
+  			font-size: 0.6em;
+  		}
+   	}
+}
+    
+    

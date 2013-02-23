@@ -14,12 +14,17 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
         <!--[if IE]>
     		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   		<![endif]-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/bdj6ahs.js"></script>
+		<script type="text/javascript">
+			try {
+				Typekit.load();
+			} catch(e) {
+			}
+		</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -27,7 +32,64 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header>
+        	<div id="top_bar">
+        		<div id="color1"></div>
+        		<div id="color2"></div>
+        		<div id="color3"></div>
+        		<div class="clearfix"></div>
+        	</div>
+        	<div id="title_bar">
+        		<div id="logo">
+        			Tribity
+        			<span class="ux">UX</span>
+        			<span class="design">Design</span>
+        			<span class="software">Software</span>
+        		</div>
+        		<div id="menu">
+	        		<a href="work.html">Work</a>
+        			<a href="company.html">Company</a>
+        			<a href="contact.html">Contact</a>
+        		</div>
+        	</div>
+        </header>
+        <section id="image_bar">
+        	<div id="image_top_bar"></div>
+        	<div id="work">
+        		<div class="work_type">
+        			<img alt="" src="" class="work_image">
+        			<h1 class="work_title">Web Apps</h1>
+        			<p class="work_description">Pudding tootsie roll danish oat cake caramels gummies brownie chocolate tiramisu. Applicake cheesecake faworki</p>
+        		</div>
+        		<div class="work_type">
+        			<img alt="" src="" class="work_image">
+        			<h1 class="work_title">Responsive Websites</h1>
+        			<p class="work_description">Pudding tootsie roll danish oat cake caramels gummies brownie chocolate tiramisu. Applicake cheesecake faworki</p>
+        		</div>
+        		<div class="work_type">
+        			<img alt="" src="" class="work_image">
+        			<h1 class="work_title">Mobile Games</h1>
+        			<p class="work_description">Pudding tootsie roll danish oat cake caramels gummies brownie chocolate tiramisu. Applicake cheesecake faworki</p>
+        		</div>
+        	</div>
+        </section>
+        <section id="content">
+        		<p>We design and develop web application to boost up productivity across a range of platforms</p>
+        		<hr>
+        		<p>Tribity helps business to grow. See how by checking our <a href="work.html">work</a></p>
+        </section>
+        <footer>
+        	<div id="social">
+        		<a href="" id="twitter"></a>
+        		<a href="" id="facebook"></a>
+        		<a href="" id="dribbble"></a>
+        	</div>
+        	<p>Stay in touch</p>
+        	<p id="rights">
+        		Tribity © 2013 all rights reserverd<br />
+        		Established in Kraków
+        	</p>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>

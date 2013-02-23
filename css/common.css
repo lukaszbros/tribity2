@@ -1,0 +1,217 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+/* line 21, ../sass/common.scss */
+body {
+  background: white;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* line 28, ../sass/common.scss */
+a {
+  color: #00c376;
+}
+/* line 30, ../sass/common.scss */
+a:hover {
+  color: #e62799;
+}
+
+/* line 35, ../sass/common.scss */
+.ux {
+  color: #e62799;
+}
+
+/* line 38, ../sass/common.scss */
+.design {
+  color: #00aed9;
+}
+
+/* line 41, ../sass/common.scss */
+.software {
+  color: #00c376;
+}
+
+/* line 45, ../sass/common.scss */
+.container {
+  width: 1000px;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  /* line 45, ../sass/common.scss */
+  .container {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+/* line 56, ../sass/common.scss */
+header #top_bar {
+  width: 100%;
+}
+/* line 58, ../sass/common.scss */
+header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
+  height: 6px;
+  float: left;
+}
+/* line 62, ../sass/common.scss */
+header #top_bar #color1 {
+  width: 45%;
+  background-color: #00c376;
+}
+/* line 66, ../sass/common.scss */
+header #top_bar #color2 {
+  width: 35%;
+  background-color: #00aed9;
+}
+/* line 70, ../sass/common.scss */
+header #top_bar #color3 {
+  width: 20%;
+  background-color: #e62799;
+}
+/* line 76, ../sass/common.scss */
+header #title_bar {
+  height: 75px;
+  position: relative;
+}
+/* line 79, ../sass/common.scss */
+header #title_bar #logo, header #title_bar #menu {
+  position: absolute;
+  bottom: 10px;
+}
+/* line 83, ../sass/common.scss */
+header #title_bar #logo {
+  left: 0;
+  font-size: 2em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+/* line 88, ../sass/common.scss */
+header #title_bar #logo span {
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-left: 1%;
+}
+/* line 94, ../sass/common.scss */
+header #title_bar #menu {
+  right: 0;
+  width: 270px;
+  font-size: 1em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+/* line 100, ../sass/common.scss */
+header #title_bar #menu a {
+  margin-left: 10%;
+  color: black;
+  text-decoration: none;
+}
+/* line 104, ../sass/common.scss */
+header #title_bar #menu a:nth-child(1):hover {
+  color: #e62799;
+}
+/* line 107, ../sass/common.scss */
+header #title_bar #menu a:nth-child(2):hover {
+  color: #00aed9;
+}
+/* line 110, ../sass/common.scss */
+header #title_bar #menu a:nth-child(3):hover {
+  color: #00c376;
+}
+
+/* line 1, ../sass/home.scss */
+#image_bar {
+  height: 430px;
+  width: 100%;
+  background-color: #666666;
+  position: relative;
+}
+/* line 6, ../sass/home.scss */
+#image_bar #image_top_bar {
+  height: 6px;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 11, ../sass/home.scss */
+#image_bar #work_bar, #image_bar #work_content {
+  height: 230px;
+}
+/* line 14, ../sass/home.scss */
+#image_bar #work_bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 21, ../sass/home.scss */
+#image_bar #work_content {
+  position: relative;
+  top: 194px;
+  color: #ffffff;
+}
+/* line 25, ../sass/home.scss */
+#image_bar #work_content .work_type {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+/* line 29, ../sass/home.scss */
+#image_bar #work_content .work_type img {
+  height: 60px;
+  width: 100px;
+  background-color: #00AED9;
+  padding-top: 25px;
+}
+/* line 35, ../sass/home.scss */
+#image_bar #work_content .work_type h1 {
+  font-size: 1.5em;
+}
+/* line 38, ../sass/home.scss */
+#image_bar #work_content .work_type p {
+  color: #aaaaaa;
+}
+
+/* line 45, ../sass/home.scss */
+#content {
+  width: 100%;
+  color: #bbbbbb;
+  margin: 50px 0 50px 0;
+  text-align: center;
+}
+/* line 50, ../sass/home.scss */
+#content p {
+  font-size: 1.5em;
+}
+
+/* line 120, ../sass/common.scss */
+footer {
+  clear: both;
+  height: 120px;
+  width: 100%;
+}
+/* line 124, ../sass/common.scss */
+footer #footer_content {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  color: #cccccc;
+}
+/* line 129, ../sass/common.scss */
+footer #footer_content p {
+  color: #666666;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+}
+/* line 135, ../sass/common.scss */
+footer #footer_content #rights {
+  font-size: 0.6em;
+}
