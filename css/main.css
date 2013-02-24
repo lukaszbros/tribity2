@@ -238,6 +238,30 @@ header #title_bar #menu a:nth-child(3):hover {
   }
 }
 
+/* line 124, ../sass/common.scss */
+footer {
+  clear: both;
+  height: 120px;
+  width: 100%;
+}
+/* line 128, ../sass/common.scss */
+footer #footer_content {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  color: #dddddd;
+}
+/* line 133, ../sass/common.scss */
+footer #footer_content p {
+  font-size: 1.5em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+}
+/* line 138, ../sass/common.scss */
+footer #footer_content #rights {
+  font-size: 0.7em;
+}
+
 /* line 4, ../sass/home.scss */
 #image_bar {
   height: 430px;
@@ -432,30 +456,6 @@ header #title_bar #menu a:nth-child(3):hover {
   color: #aaaaaa;
 }
 
-/* line 128, ../sass/common.scss */
-footer {
-  clear: both;
-  height: 120px;
-  width: 100%;
-}
-/* line 132, ../sass/common.scss */
-footer #footer_content {
-  width: 200px;
-  margin: auto;
-  text-align: center;
-  color: #dddddd;
-}
-/* line 137, ../sass/common.scss */
-footer #footer_content p {
-  font-size: 1.5em;
-  -webkit-margin-before: 0.5em;
-  -webkit-margin-after: 0.5em;
-}
-/* line 142, ../sass/common.scss */
-footer #footer_content #rights {
-  font-size: 0.7em;
-}
-
 /*
   Welcome to Compass. Use this file to define print styles.
   Import this file using the following HTML or equivalent:
@@ -467,7 +467,7 @@ footer #footer_content #rights {
 /*
  * Image replacement
  */
-/* line 108, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -476,7 +476,7 @@ footer #footer_content #rights {
   *text-indent: -9999px;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -487,7 +487,7 @@ footer #footer_content #rights {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 127, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -496,7 +496,7 @@ footer #footer_content #rights {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 136, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -512,7 +512,7 @@ footer #footer_content #rights {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 153, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -526,7 +526,7 @@ footer #footer_content #rights {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 166, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -542,7 +542,7 @@ footer #footer_content #rights {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 183, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -551,7 +551,7 @@ footer #footer_content #rights {
   /* 2 */
 }
 
-/* line 188, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -560,7 +560,7 @@ footer #footer_content #rights {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 197, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -581,7 +581,7 @@ footer #footer_content #rights {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 224, ../sass/main.scss */
+  /* line 232, ../sass/main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -590,18 +590,18 @@ footer #footer_content #rights {
     text-shadow: none !important;
   }
 
-  /* line 232, ../sass/main.scss */
+  /* line 240, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 236, ../sass/main.scss */
+  /* line 244, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 240, ../sass/main.scss */
+  /* line 248, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -609,33 +609,33 @@ footer #footer_content #rights {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 250, ../sass/main.scss */
+  /* line 258, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 255, ../sass/main.scss */
+  /* line 263, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 260, ../sass/main.scss */
+  /* line 268, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 265, ../sass/main.scss */
+  /* line 273, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 269, ../sass/main.scss */
+  /* line 277, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -644,7 +644,7 @@ footer #footer_content #rights {
     margin: 0.5cm;
 }
 
-  /* line 279, ../sass/main.scss */
+  /* line 287, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -652,7 +652,7 @@ footer #footer_content #rights {
     widows: 3;
   }
 
-  /* line 285, ../sass/main.scss */
+  /* line 293, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
