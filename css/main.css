@@ -8,7 +8,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 html,
 button,
 input,
@@ -17,7 +17,7 @@ textarea {
   color: #222;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -28,13 +28,13 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -43,7 +43,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 46, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -56,7 +56,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 img {
   vertical-align: middle;
 }
@@ -64,7 +64,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 67, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -74,7 +74,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 textarea {
   resize: vertical;
 }
@@ -82,7 +82,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -200,27 +200,32 @@ a:hover {
 }
 
 /* line 30, ../sass/common.scss */
+p {
+  font-size: 1.6em;
+}
+
+/* line 34, ../sass/common.scss */
 .ux {
   color: #e62799;
 }
 
-/* line 33, ../sass/common.scss */
+/* line 37, ../sass/common.scss */
 .design {
   color: #00aed9;
 }
 
-/* line 36, ../sass/common.scss */
+/* line 40, ../sass/common.scss */
 .software {
   color: #00c376;
 }
 
-/* line 40, ../sass/common.scss */
+/* line 44, ../sass/common.scss */
 .container {
   width: 1000px;
   margin: auto;
 }
 @media screen and (max-width: 1000px) {
-  /* line 40, ../sass/common.scss */
+  /* line 44, ../sass/common.scss */
   .container {
     width: 98%;
     margin-left: 1%;
@@ -228,42 +233,42 @@ a:hover {
   }
 }
 
-/* line 51, ../sass/common.scss */
+/* line 55, ../sass/common.scss */
 header #top_bar {
   width: 100%;
 }
-/* line 53, ../sass/common.scss */
+/* line 57, ../sass/common.scss */
 header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
   height: 6px;
   float: left;
 }
-/* line 57, ../sass/common.scss */
+/* line 61, ../sass/common.scss */
 header #top_bar #color1 {
   width: 45%;
   background-color: #00c376;
 }
-/* line 61, ../sass/common.scss */
+/* line 65, ../sass/common.scss */
 header #top_bar #color2 {
   width: 35%;
   background-color: #00aed9;
 }
-/* line 65, ../sass/common.scss */
+/* line 69, ../sass/common.scss */
 header #top_bar #color3 {
   width: 20%;
   background-color: #e62799;
 }
-/* line 71, ../sass/common.scss */
+/* line 75, ../sass/common.scss */
 header #title_bar {
   height: 75px;
   position: relative;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 75, ../sass/common.scss */
+/* line 79, ../sass/common.scss */
 header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 79, ../sass/common.scss */
+/* line 83, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
   width: 350px;
@@ -271,44 +276,44 @@ header #title_bar #logo {
   font-weight: 700;
   cursor: pointer;
 }
-/* line 85, ../sass/common.scss */
+/* line 89, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
   margin-left: 1%;
   cursor: default;
 }
-/* line 92, ../sass/common.scss */
+/* line 96, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 97, ../sass/common.scss */
+/* line 101, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
 }
-/* line 101, ../sass/common.scss */
+/* line 105, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 104, ../sass/common.scss */
+/* line 108, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 107, ../sass/common.scss */
+/* line 111, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 71, ../sass/common.scss */
+  /* line 75, ../sass/common.scss */
   header #title_bar {
     height: 125px;
   }
-  /* line 114, ../sass/common.scss */
+  /* line 118, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
     position: relative;
     left: inherit;
@@ -316,40 +321,40 @@ header #title_bar #menu a:nth-child(3):hover {
     margin: auto;
     text-align: center;
   }
-  /* line 121, ../sass/common.scss */
+  /* line 125, ../sass/common.scss */
   header #title_bar #logo {
     padding: 40px 0 20px 0;
   }
 }
 
-/* line 129, ../sass/common.scss */
+/* line 133, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 20px;
 }
-/* line 134, ../sass/common.scss */
+/* line 138, ../sass/common.scss */
 footer #footer_content {
   width: 200px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 139, ../sass/common.scss */
+/* line 143, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 145, ../sass/common.scss */
+/* line 149, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 150, ../sass/common.scss */
+/* line 154, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;
@@ -412,7 +417,7 @@ footer #footer_content #rights {
 #image_bar #work_list {
   position: relative;
   top: 194px;
-  color: #222222;
+  color: #333333;
 }
 /* line 43, ../sass/home.scss */
 #image_bar #work_list .work_type {
@@ -463,94 +468,126 @@ footer #footer_content #rights {
   margin: 50px 0 50px 0;
   text-align: center;
 }
-/* line 81, ../sass/home.scss */
-#content p {
-  font-size: 1.6em;
+
+/* line 82, work/*.png */
+.work-sprite, .work-work-tiles1, .work-work-tiles2, .work-work-tiles3, .work-work-tiles4, .work-work-tiles5, .work-work-tiles6 {
+  background: url('/tribity2/img/work-s92b068c3d6.png') no-repeat;
 }
 
-/* line 3, ../sass/work.scss */
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles1 {
+  background-position: 0 0;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles2 {
+  background-position: 0 -1464px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles3 {
+  background-position: 0 -1098px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles4 {
+  background-position: 0 -732px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles5 {
+  background-position: 0 -366px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles6 {
+  background-position: 0 -1830px;
+}
+
+/* line 6, ../sass/work.scss */
 #work_content {
   text-align: center;
 }
-/* line 5, ../sass/work.scss */
-#work_content p {
-  font-size: 1.5em;
+/* line 8, ../sass/work.scss */
+#work_content .quotation {
+  font-style: italic;
 }
 
-/* line 10, ../sass/work.scss */
+/* line 13, ../sass/work.scss */
 #project_container {
   padding: 50px 0 50px 0;
 }
 @media screen and (max-width: 1000px) {
-  /* line 10, ../sass/work.scss */
+  /* line 13, ../sass/work.scss */
   #project_container {
     width: 700px;
     margin: auto;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 10, ../sass/work.scss */
+  /* line 13, ../sass/work.scss */
   #project_container {
     width: 350px;
   }
 }
 
-/* line 21, ../sass/work.scss */
+/* line 24, ../sass/work.scss */
 .project {
   height: 400px;
   width: 33%;
   float: left;
   padding: 10px 0 10px 0;
 }
-/* line 26, ../sass/work.scss */
-.project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
-  border-right: 1px solid #999999;
-}
 /* line 29, ../sass/work.scss */
+.project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
+  border-right: 1px solid #cccccc;
+}
+/* line 32, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1000px) {
-  /* line 21, ../sass/work.scss */
+  /* line 24, ../sass/work.scss */
   .project {
     width: 333px;
   }
-  /* line 35, ../sass/work.scss */
+  /* line 38, ../sass/work.scss */
   .project:nth-child(2), .project:nth-child(4) {
     border-right: none;
   }
-  /* line 38, ../sass/work.scss */
-  .project:nth-child(3) {
-    border-right: 1px solid #999999;
-  }
   /* line 41, ../sass/work.scss */
+  .project:nth-child(3) {
+    border-right: 1px solid #cccccc;
+  }
+  /* line 44, ../sass/work.scss */
   .project:nth-child(4) {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 46, ../sass/work.scss */
+  /* line 49, ../sass/work.scss */
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5) {
     border-right: none;
   }
-  /* line 49, ../sass/work.scss */
+  /* line 52, ../sass/work.scss */
   .project:nth-child(5) {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #cccccc;
   }
 }
-/* line 54, ../sass/work.scss */
-.project img {
+/* line 56, ../sass/work.scss */
+.project span {
   height: 280px;
-  width: 280px;
+  width: 300px;
+  display: inline-block;
 }
-/* line 58, ../sass/work.scss */
+/* line 61, ../sass/work.scss */
 .project h1 {
   font-size: 1.5em;
 }
-/* line 61, ../sass/work.scss */
+/* line 64, ../sass/work.scss */
 .project h2 {
   font-size: 1em;
-  color: #aaaaaa;
+  color: #666666;
 }
 
 /*
@@ -564,7 +601,7 @@ footer #footer_content #rights {
 /*
  * Image replacement
  */
-/* line 116, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -573,7 +610,7 @@ footer #footer_content #rights {
   *text-indent: -9999px;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -584,7 +621,7 @@ footer #footer_content #rights {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 135, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -593,7 +630,7 @@ footer #footer_content #rights {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 144, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -609,7 +646,7 @@ footer #footer_content #rights {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 161, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -623,7 +660,7 @@ footer #footer_content #rights {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 174, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -639,7 +676,7 @@ footer #footer_content #rights {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 191, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -648,7 +685,7 @@ footer #footer_content #rights {
   /* 2 */
 }
 
-/* line 196, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -657,7 +694,7 @@ footer #footer_content #rights {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 205, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -678,7 +715,7 @@ footer #footer_content #rights {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 232, ../sass/main.scss */
+  /* line 234, ../sass/main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -687,18 +724,18 @@ footer #footer_content #rights {
     text-shadow: none !important;
   }
 
-  /* line 240, ../sass/main.scss */
+  /* line 242, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 244, ../sass/main.scss */
+  /* line 246, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 248, ../sass/main.scss */
+  /* line 250, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -706,33 +743,33 @@ footer #footer_content #rights {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 258, ../sass/main.scss */
+  /* line 260, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 263, ../sass/main.scss */
+  /* line 265, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 268, ../sass/main.scss */
+  /* line 270, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 273, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 277, ../sass/main.scss */
+  /* line 279, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -741,7 +778,7 @@ footer #footer_content #rights {
     margin: 0.5cm;
 }
 
-  /* line 287, ../sass/main.scss */
+  /* line 289, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -749,7 +786,7 @@ footer #footer_content #rights {
     widows: 3;
   }
 
-  /* line 293, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

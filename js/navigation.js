@@ -3,7 +3,7 @@
 
   $(function() {
     var loadContent;
-    $.ajax('home.html', {
+    $.ajax('work.html', {
       type: 'GET',
       cache: false,
       success: function(data) {
@@ -18,6 +18,7 @@
     $('#logo').click(function() {
       return $.ajax('home.html', {
         type: 'GET',
+        cache: false,
         success: function(data) {
           return loadContent(data);
         }
@@ -29,6 +30,7 @@
       href = $(this).attr("href");
       return $.ajax(href, {
         type: 'GET',
+        cache: false,
         success: function(data) {
           return loadContent(data);
         }

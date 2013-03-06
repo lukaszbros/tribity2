@@ -1,9 +1,12 @@
 @import "config";
 
+@import "work/*.png";
+@include all-work-sprites;
+
 #work_content {
 	text-align: center;
-	p {
-		font-size: 1.5em;
+	.quotation {
+		font-style:italic;
 	}
 }
 
@@ -24,10 +27,10 @@
 	float: left;
 	padding: 10px 0 10px 0;
 	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
-		border-right: 1px solid $footerGrey;
+		border-right: 1px solid $hrColor;
 	}
 	&:nth-child(1), &:nth-child(2), &:nth-child(3) {
-		border-bottom: 1px solid $footerGrey;
+		border-bottom: 1px solid $hrColor;
 	}
 	
 	@media screen and (max-width: $breakBase) {
@@ -36,10 +39,10 @@
 			border-right: none;
 		}
 		&:nth-child(3) {
-			border-right: 1px solid $footerGrey;
+			border-right: 1px solid $hrColor;
 		}
 		&:nth-child(4) {
-			border-bottom: 1px solid $footerGrey;
+			border-bottom: 1px solid $hrColor;
 		}
 	}
 	@media screen and (max-width: $breakBaseWork) {
@@ -47,19 +50,19 @@
 			border-right: none;
 		}
 		&:nth-child(5) {
-			border-bottom: 1px solid $footerGrey;
+			border-bottom: 1px solid $hrColor;
 		}
 	}
-	
-	img {
+	span {
 		height: 280px;
-		width: 280px;
+		width: 300px;
+		display: inline-block;
 	}
 	h1{
 		font-size: 1.5em;
 	}
 	h2{
 		font-size: 1em;
-		color: $lightGrey;
+		color: $darkGrey;
 	}
 }

@@ -1,7 +1,7 @@
 $ ->
   
   #Home page load
-  $.ajax 'home.html',
+  $.ajax 'work.html',
       type: 'GET'
       cache: false
       success: (data) ->
@@ -16,6 +16,7 @@ $ ->
   $('#logo').click ->
     $.ajax 'home.html',
       type: 'GET'
+      cache: false
       success: (data) ->
         loadContent data
           
@@ -24,6 +25,7 @@ $ ->
     event.preventDefault()
     href = $(@).attr("href")
     $.ajax href,
-      type: 'GET'      
+      type: 'GET'
+      cache: false      
       success: (data) ->
         loadContent data

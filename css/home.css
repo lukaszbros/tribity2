@@ -55,7 +55,7 @@
 #image_bar #work_list {
   position: relative;
   top: 194px;
-  color: #222222;
+  color: #333333;
 }
 /* line 43, ../sass/home.scss */
 #image_bar #work_list .work_type {
@@ -105,8 +105,4 @@
   color: #666666;
   margin: 50px 0 50px 0;
   text-align: center;
-}
-/* line 81, ../sass/home.scss */
-#content p {
-  font-size: 1.6em;
 }
