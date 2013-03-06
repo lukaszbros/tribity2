@@ -10,9 +10,6 @@
 $fontFamilyBase: "chaparral-pro",sans-serif;
 $fontFamilyLogo: "proxima-nova",sans-serif; 
 
-@import "icons/*.png";
-@include all-icons-sprites;
-
 body{	
 	background: $bgColor;
 	font-family: $fontFamilyBase;

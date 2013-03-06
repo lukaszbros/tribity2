@@ -3,7 +3,7 @@
 
   $(function() {
     var loadContent;
-    $.ajax('work.html', {
+    $.ajax('home.html', {
       type: 'GET',
       cache: false,
       success: function(data) {

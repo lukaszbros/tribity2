@@ -95,6 +95,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@import "icons/*.png";
+@include all-icons-sprites;
+@import "work/*.png";
+@include all-work-sprites;
+
 @import "common";
 
 @import "home";
