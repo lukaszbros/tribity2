@@ -89,6 +89,10 @@ header {
 				margin-left:1%;
 				cursor: default;
 			}
+			@media screen and (max-width: $breakLogo) {
+    			width: 300px;
+    			font-size: 1.5em;
+  			}	
 		}
 		#menu {
 			right: 0;

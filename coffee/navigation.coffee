@@ -1,7 +1,7 @@
 $ ->
   
   #Home page load
-  $.ajax 'home.html',
+  $.ajax 'work.html',
       type: 'GET'
       cache: false
       success: (data) ->

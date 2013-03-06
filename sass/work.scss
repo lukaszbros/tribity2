@@ -14,7 +14,7 @@
 		margin: auto;
 	}
 	@media screen and (max-width: $breakBaseWork) {
-		width: 350px;		
+		width: 300px;		
 	}
 }
 
@@ -23,6 +23,9 @@
 	width: 33%;
 	float: left;
 	padding: 10px 0 10px 0;
+	&:hover {
+		background-color:$opacityGrey;
+	}
 	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
 		border-right: 1px solid $hrColor;
 	}
@@ -31,7 +34,7 @@
 	}
 	
 	@media screen and (max-width: $breakBase) {
-		width: 333px;
+		width: 300px;
 		&:nth-child(2), &:nth-child(4) {
 			border-right: none;
 		}
@@ -51,7 +54,7 @@
 		}
 	}
 	span {
-		height: 280px;
+		height: 220px;
 		width: 300px;
 		display: inline-block;
 	}
@@ -61,5 +64,6 @@
 	h2{
 		font-size: 1em;
 		color: $darkGrey;
+		padding: 0 20px;
 	}
 }
