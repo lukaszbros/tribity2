@@ -23,7 +23,7 @@
         }
       });
     });
-    return $('body').on('click', 'a', function(event) {
+    return $('body').on('click', 'a:not(.direct)', function(event) {
       var href;
       event.preventDefault();
       href = $(this).attr("href");

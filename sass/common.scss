@@ -7,7 +7,11 @@
 
 @import "config";
 
-$fontFamilyBase:"proxima-nova",sans-serif;
+$fontFamilyBase: "chaparral-pro",sans-serif;
+$fontFamilyLogo: "proxima-nova",sans-serif; 
+
+@import "icons/*.png";
+@include all-icons-sprites;
 
 body{	
 	background: $bgColor;
@@ -67,6 +71,7 @@ header {
 	#title_bar {	
 		height: 75px;	
 		position: relative;
+		font-family: $fontFamilyLogo;
   		#logo, #menu {  			
 			position: absolute;
 			bottom: 10px;	
@@ -125,18 +130,26 @@ footer {
 	clear:both;
    	height:120px;
    	width: 100%;
+	padding-top: 20px;
    	#footer_content {
    		width:200px;
    		margin:auto;
    		text-align:center;
    		color: $footerGrey;
+   		a {
+   			height: 26px;
+   			width: 26px;
+   			display: inline-block;
+   			margin: 0 1px 0 1px;
+   		}
   		p {
   			font-size: 1.5em;
-  			-webkit-margin-before: 0.5em;
+  			-webkit-margin-before: 0.1em;
 			-webkit-margin-after: 0.5em;
   		}
   		#rights {
-  			font-size: 0.7em;
+  			font-family: $fontFamilyLogo;
+  			font-size: 0.85em;
   		}
    	}
 }

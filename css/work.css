@@ -34,11 +34,11 @@
 }
 /* line 26, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #999999;
 }
 /* line 29, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #999999;
 }
 @media screen and (max-width: 1000px) {
   /* line 21, ../sass/work.scss */
@@ -51,11 +51,11 @@
   }
   /* line 38, ../sass/work.scss */
   .project:nth-child(3) {
-    border-right: 1px solid #dddddd;
+    border-right: 1px solid #999999;
   }
   /* line 41, ../sass/work.scss */
   .project:nth-child(4) {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #999999;
   }
 }
 @media screen and (max-width: 700px) {
@@ -65,7 +65,7 @@
   }
   /* line 49, ../sass/work.scss */
   .project:nth-child(5) {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #999999;
   }
 }
 /* line 54, ../sass/work.scss */

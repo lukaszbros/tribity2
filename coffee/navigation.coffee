@@ -20,7 +20,7 @@ $ ->
         loadContent data
           
   #All links
-  $('body').on 'click', 'a', (event) ->
+  $('body').on 'click', 'a:not(.direct)', (event) ->
     event.preventDefault()
     href = $(@).attr("href")
     $.ajax href,
