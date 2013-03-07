@@ -1,7 +1,7 @@
 $ ->
   
   #Home page load
-  $.ajax 'work.html',
+  $.ajax 'company.html',
       type: 'GET'
       cache: false
       success: (data) ->
@@ -29,3 +29,7 @@ $ ->
       cache: false      
       success: (data) ->
         loadContent data
+        
+  #Hover efect for work page
+  #$('body').on 'mouseenter ', '.project', () -> $(@).animate({backgroundColor: "#aaaaaa"})
+  #$('body').on 'mouseleave ', '.project', ()  -> $(@).animate({backgroundColor:'#ffffff'})  

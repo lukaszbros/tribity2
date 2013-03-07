@@ -99,6 +99,8 @@ textarea {
 @include all-icons-sprites;
 @import "work/*.png";
 @include all-work-sprites;
+@import "company/team/*.png";
+@include all-team-sprites;
 
 @import "common";
 

@@ -23,8 +23,9 @@
 	width: 33%;
 	float: left;
 	padding: 10px 0 10px 0;
+	cursor: pointer;
 	&:hover {
-		background-color:$opacityGrey;
+		background-color: $hoverGrey;
 	}
 	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
 		border-right: 1px solid $hrColor;

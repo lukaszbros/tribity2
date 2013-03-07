@@ -31,16 +31,17 @@
   width: 33%;
   float: left;
   padding: 10px 0 10px 0;
+  cursor: pointer;
 }
-/* line 26, ../sass/work.scss */
+/* line 27, ../sass/work.scss */
 .project:hover {
-  background-color: #dddddd;
+  background-color: #eeeeee;
 }
-/* line 29, ../sass/work.scss */
+/* line 30, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 32, ../sass/work.scss */
+/* line 33, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
@@ -49,40 +50,40 @@
   .project {
     width: 300px;
   }
-  /* line 38, ../sass/work.scss */
+  /* line 39, ../sass/work.scss */
   .project:nth-child(2), .project:nth-child(4) {
     border-right: none;
   }
-  /* line 41, ../sass/work.scss */
+  /* line 42, ../sass/work.scss */
   .project:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 44, ../sass/work.scss */
+  /* line 45, ../sass/work.scss */
   .project:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 49, ../sass/work.scss */
+  /* line 50, ../sass/work.scss */
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5) {
     border-right: none;
   }
-  /* line 52, ../sass/work.scss */
+  /* line 53, ../sass/work.scss */
   .project:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 56, ../sass/work.scss */
+/* line 57, ../sass/work.scss */
 .project span {
   height: 220px;
   width: 300px;
   display: inline-block;
 }
-/* line 61, ../sass/work.scss */
+/* line 62, ../sass/work.scss */
 .project h1 {
   font-size: 1.5em;
 }
-/* line 64, ../sass/work.scss */
+/* line 65, ../sass/work.scss */
 .project h2 {
   font-size: 1em;
   color: #666666;

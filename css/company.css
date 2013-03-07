@@ -1,0 +1,125 @@
+/* line 3, ../sass/company.scss */
+#people_content {
+  text-align: center;
+}
+/* line 5, ../sass/company.scss */
+#people_content .quotation {
+  font-style: italic;
+}
+
+/* line 10, ../sass/company.scss */
+#people_container {
+  padding: 50px 0 50px 0;
+}
+@media screen and (max-width: 1000px) {
+  /* line 10, ../sass/company.scss */
+  #people_container {
+    width: 700px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 10, ../sass/company.scss */
+  #people_container {
+    width: 300px;
+  }
+}
+
+/* line 21, ../sass/company.scss */
+.person {
+  width: 33%;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  height: 366px;
+}
+/* line 27, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5), .person:nth-child(7), .person:nth-child(8) {
+  border-right: 1px solid #cccccc;
+}
+/* line 30, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(3), .person:nth-child(4), .person:nth-child(5), .person:nth-child(6) {
+  border-bottom: 1px solid #cccccc;
+}
+@media screen and (max-width: 1000px) {
+  /* line 21, ../sass/company.scss */
+  .person {
+    width: 300px;
+  }
+  /* line 36, ../sass/company.scss */
+  .person:nth-child(2), .person:nth-child(4), .person:nth-child(8) {
+    border-right: none;
+  }
+  /* line 39, ../sass/company.scss */
+  .person:nth-child(3), .person:nth-child(9) {
+    border-right: 1px solid #cccccc;
+  }
+  /* line 42, ../sass/company.scss */
+  .person:nth-child(4), .person:nth-child(7), .person:nth-child(8) {
+    border-bottom: 1px solid #cccccc;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 47, ../sass/company.scss */
+  .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
+    border-right: none;
+  }
+}
+/* line 51, ../sass/company.scss */
+.person span {
+  height: 366px;
+  width: 330px;
+  display: inline-block;
+}
+/* line 57, ../sass/company.scss */
+.person .name-and-place {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  width: 160px;
+}
+/* line 62, ../sass/company.scss */
+.person .name-and-place h1 {
+  font-size: 1.5em;
+  font-family: "proxima-nova", sans-serif;
+  margin: 0 0;
+}
+/* line 67, ../sass/company.scss */
+.person .name-and-place h2 {
+  font-size: 1em;
+  color: #666666;
+  margin: 0 0;
+}
+/* line 73, ../sass/company.scss */
+.person #join-us {
+  margin-top: 155px;
+  font-size: 2em;
+  font-family: "proxima-nova", sans-serif;
+}
+/* line 77, ../sass/company.scss */
+.person #join-us span {
+  height: inherit;
+  display: inline;
+  color: #00c376;
+  font-weight: bold;
+}
+/* line 82, ../sass/company.scss */
+.person #join-us span #us {
+  color: #333333;
+}
+/* line 86, ../sass/company.scss */
+.person #join-us a {
+  font-size: 0.7em;
+  height: 35px;
+  line-height: 35px;
+  width: 130px;
+  display: block;
+  color: #eeeeee;
+  background-color: #333333;
+  text-decoration: none;
+  margin: auto;
+}
+/* line 96, ../sass/company.scss */
+.person #join-us a:hover {
+  background-color: #666666;
+}
