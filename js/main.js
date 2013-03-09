@@ -8,9 +8,11 @@
         return c.replace(/_hover/g, '');
       });
       $(this).addClass('selected-purpose');
-      return $(this).attr('class', function(i, c) {
+      $(this).attr('class', function(i, c) {
         return c.replace(/_icon/, '_icon_hover');
       });
+      console.log($(this).attr('id'));
+      return $('#purpose').val($(this).attr('id'));
     });
   });
 

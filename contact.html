@@ -8,14 +8,15 @@
 				<li class="apps_icon icons-apps_icon purpose" id="app"><span>An application</span></li>
 				<li class="websites_icon icons-websites_icon purpose" id="website"><span>A website</span></li>
 				<li class="games_icon icons-games_icon purpose" id="game"><span>A game</span></li>
-				<li class="comment_icon icons-comment_icon purpose" id="comment"><span>Just wanted to ask ...</span></li>
+				<li class="comment_icon icons-comment_icon purpose" id="question"><span>Just wanted to ask ...</span></li>
 			</ul>
 			<div id="contact_form">
-				<form>
+				<form action="mailto:michal@tribity.com" method="post" enctype="text/plain">
 					<input type="text" name="first_name" placeholder="First name">
 					<input type="text" name="last_name" placeholder="Last name">
 					<input type="email" name="email" placeholder="Email address">
-					<textarea name="project" placeholder="Tell us about your project ..."></textarea>
+					<input type="hidden" name="purpose" id="purpose" value="">
+					<textarea name="project_description" placeholder="Tell us about your project ..."></textarea>
 					<input type="submit" value="Send it on" class="button">
 				</form>
 			</div>
