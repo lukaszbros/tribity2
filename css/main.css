@@ -968,6 +968,11 @@ footer #footer_content #rights {
   margin: 10px 0;
 }
 
+/* line 69, ../sass/contact.scss */
+.selected-purpose {
+  color: #00c376;
+}
+
 /*
   Welcome to Compass. Use this file to define print styles.
   Import this file using the following HTML or equivalent:
