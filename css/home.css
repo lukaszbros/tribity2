@@ -4,6 +4,7 @@
   width: 100%;
   background-color: #666666;
   background-image: url('/tribity2/img/home/3.png?1362523201');
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -19,30 +20,30 @@
     height: 890px;
   }
 }
-/* line 17, ../sass/home.scss */
+/* line 18, ../sass/home.scss */
 #image_bar #image_top_bar {
   height: 6px;
   background-color: #000000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
-/* line 22, ../sass/home.scss */
+/* line 23, ../sass/home.scss */
 #image_bar #work_bar, #image_bar #work_list {
   height: 230px;
 }
 @media screen and (max-width: 1128px) {
-  /* line 22, ../sass/home.scss */
+  /* line 23, ../sass/home.scss */
   #image_bar #work_bar, #image_bar #work_list {
     height: 460px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 22, ../sass/home.scss */
+  /* line 23, ../sass/home.scss */
   #image_bar #work_bar, #image_bar #work_list {
     height: 690px;
   }
 }
-/* line 31, ../sass/home.scss */
+/* line 32, ../sass/home.scss */
 #image_bar #work_bar {
   position: absolute;
   bottom: 0;
@@ -51,56 +52,56 @@
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
-/* line 39, ../sass/home.scss */
+/* line 40, ../sass/home.scss */
 #image_bar #work_list {
   position: relative;
   top: 194px;
   color: #333333;
 }
-/* line 43, ../sass/home.scss */
+/* line 44, ../sass/home.scss */
 #image_bar #work_list .work_type {
   width: 33%;
   float: left;
   text-align: center;
 }
-/* line 47, ../sass/home.scss */
+/* line 48, ../sass/home.scss */
 #image_bar #work_list .work_type span {
   height: 95px;
   width: 195px;
   margin-top: 10px;
   display: inline-block;
 }
-/* line 53, ../sass/home.scss */
+/* line 54, ../sass/home.scss */
 #image_bar #work_list .work_type h1 {
   font-size: 1.5em;
   color: #dddddd;
   margin: 0.1em 0;
   font-weight: normal;
 }
-/* line 59, ../sass/home.scss */
+/* line 60, ../sass/home.scss */
 #image_bar #work_list .work_type p {
   font-size: 1em;
   color: #aaaaaa;
 }
 @media screen and (max-width: 1128px) {
-  /* line 39, ../sass/home.scss */
+  /* line 40, ../sass/home.scss */
   #image_bar #work_list {
     width: 700px;
     margin: auto;
   }
-  /* line 67, ../sass/home.scss */
+  /* line 68, ../sass/home.scss */
   #image_bar #work_list .work_type {
     width: 300px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 39, ../sass/home.scss */
+  /* line 40, ../sass/home.scss */
   #image_bar #work_list {
     width: 300px;
   }
 }
 
-/* line 77, ../sass/home.scss */
+/* line 78, ../sass/home.scss */
 #content {
   width: 100%;
   color: #666666;

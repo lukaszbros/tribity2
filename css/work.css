@@ -88,16 +88,7 @@
   width: 300px;
   display: inline-block;
 }
-/* line 69, ../sass/work.scss */
-.project h1 {
-  font-size: 1.5em;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 600;
-}
-/* line 74, ../sass/work.scss */
+/* line 71, ../sass/work.scss */
 .project h2 {
-  font-size: 1em;
   color: #666666;
-  padding: 0 20px;
-  font-weight: 400;
 }

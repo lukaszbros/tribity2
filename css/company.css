@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'opacity'.
-        on line 19 of e:/WWW/tribity2/sass/company.scss, in `opacity'
-        from line 19 of e:/WWW/tribity2/sass/company.scss
+        on line 20 of e:/WWW/tribity2/sass/company.scss, in `opacity'
+        from line 20 of e:/WWW/tribity2/sass/company.scss
 
 Backtrace:
-e:/WWW/tribity2/sass/company.scss:19:in `opacity'
-e:/WWW/tribity2/sass/company.scss:19
+e:/WWW/tribity2/sass/company.scss:20:in `opacity'
+e:/WWW/tribity2/sass/company.scss:20
 c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
 c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -84,4 +84,4 @@ c:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'opacity'.\A         on line 19 of e:/WWW/tribity2/sass/company.scss, in `opacity'\A         from line 19 of e:/WWW/tribity2/sass/company.scss"; }
+  content: "Syntax error: Undefined mixin 'opacity'.\A         on line 20 of e:/WWW/tribity2/sass/company.scss, in `opacity'\A         from line 20 of e:/WWW/tribity2/sass/company.scss"; }

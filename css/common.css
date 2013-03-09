@@ -27,27 +27,42 @@ p {
 }
 
 /* line 28, ../sass/common.scss */
+h1 {
+  font-size: 1.5em;
+  font-family: "proxima-nova", sans-serif;
+  margin: 0 0;
+  font-weight: 500;
+}
+
+/* line 34, ../sass/common.scss */
+h2 {
+  font-size: 1em;
+  margin: 0 0;
+  font-weight: 300;
+}
+
+/* line 40, ../sass/common.scss */
 .ux {
   color: #e62799;
 }
 
-/* line 31, ../sass/common.scss */
+/* line 43, ../sass/common.scss */
 .design {
   color: #00aed9;
 }
 
-/* line 34, ../sass/common.scss */
+/* line 46, ../sass/common.scss */
 .software {
   color: #00c376;
 }
 
-/* line 38, ../sass/common.scss */
+/* line 50, ../sass/common.scss */
 .container {
   width: 1128px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 38, ../sass/common.scss */
+  /* line 50, ../sass/common.scss */
   .container {
     width: 98%;
     margin-left: 1%;
@@ -55,42 +70,60 @@ p {
   }
 }
 
-/* line 49, ../sass/common.scss */
+/* line 60, ../sass/common.scss */
+.button {
+  font-size: 1.2em;
+  height: 50px;
+  line-height: 50px;
+  width: 168px;
+  display: block;
+  color: #eeeeee;
+  background-color: #333333;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+/* line 71, ../sass/common.scss */
+.button:hover {
+  background-color: #666666;
+}
+
+/* line 77, ../sass/common.scss */
 header #top_bar {
   width: 100%;
 }
-/* line 51, ../sass/common.scss */
+/* line 79, ../sass/common.scss */
 header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
   height: 6px;
   float: left;
 }
-/* line 55, ../sass/common.scss */
+/* line 83, ../sass/common.scss */
 header #top_bar #color1 {
   width: 45%;
   background-color: #00c376;
 }
-/* line 59, ../sass/common.scss */
+/* line 87, ../sass/common.scss */
 header #top_bar #color2 {
   width: 35%;
   background-color: #00aed9;
 }
-/* line 63, ../sass/common.scss */
+/* line 91, ../sass/common.scss */
 header #top_bar #color3 {
   width: 20%;
   background-color: #e62799;
 }
-/* line 69, ../sass/common.scss */
+/* line 97, ../sass/common.scss */
 header #title_bar {
   height: 75px;
   position: relative;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 73, ../sass/common.scss */
+/* line 101, ../sass/common.scss */
 header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 77, ../sass/common.scss */
+/* line 105, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
   width: 350px;
@@ -98,7 +131,7 @@ header #title_bar #logo {
   font-weight: 700;
   cursor: pointer;
 }
-/* line 83, ../sass/common.scss */
+/* line 111, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
@@ -106,43 +139,43 @@ header #title_bar #logo span {
   cursor: default;
 }
 @media screen and (max-width: 400px) {
-  /* line 77, ../sass/common.scss */
+  /* line 105, ../sass/common.scss */
   header #title_bar #logo {
     width: 300px;
     font-size: 1.5em;
   }
 }
-/* line 94, ../sass/common.scss */
+/* line 122, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 99, ../sass/common.scss */
+/* line 127, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
 }
-/* line 103, ../sass/common.scss */
+/* line 131, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 106, ../sass/common.scss */
+/* line 134, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 109, ../sass/common.scss */
+/* line 137, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 69, ../sass/common.scss */
+  /* line 97, ../sass/common.scss */
   header #title_bar {
     height: 125px;
   }
-  /* line 116, ../sass/common.scss */
+  /* line 144, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
     position: relative;
     left: inherit;
@@ -150,40 +183,40 @@ header #title_bar #menu a:nth-child(3):hover {
     margin: auto;
     text-align: center;
   }
-  /* line 123, ../sass/common.scss */
+  /* line 151, ../sass/common.scss */
   header #title_bar #logo {
     padding: 40px 0 20px 0;
   }
 }
 
-/* line 131, ../sass/common.scss */
+/* line 159, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 220px;
 }
-/* line 136, ../sass/common.scss */
+/* line 164, ../sass/common.scss */
 footer #footer_content {
   width: 200px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 141, ../sass/common.scss */
+/* line 169, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 147, ../sass/common.scss */
+/* line 175, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 152, ../sass/common.scss */
+/* line 180, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;
