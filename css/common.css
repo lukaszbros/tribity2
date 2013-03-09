@@ -43,10 +43,10 @@ p {
 
 /* line 38, ../sass/common.scss */
 .container {
-  width: 1000px;
+  width: 1128px;
   margin: auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1128px) {
   /* line 38, ../sass/common.scss */
   .container {
     width: 98%;
@@ -161,7 +161,7 @@ footer {
   clear: both;
   height: 120px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 220px;
 }
 /* line 136, ../sass/common.scss */
 footer #footer_content {

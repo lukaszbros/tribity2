@@ -3,11 +3,11 @@
   height: 430px;
   width: 100%;
   background-color: #666666;
-  background-image: url('/tribity2/img/home/1.png?1362523211');
+  background-image: url('/tribity2/img/home/3.png?1362523201');
   background-repeat: no-repeat;
   position: relative;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1128px) {
   /* line 4, ../sass/home.scss */
   #image_bar {
     height: 660px;
@@ -30,7 +30,7 @@
 #image_bar #work_bar, #image_bar #work_list {
   height: 230px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1128px) {
   /* line 22, ../sass/home.scss */
   #image_bar #work_bar, #image_bar #work_list {
     height: 460px;
@@ -75,19 +75,20 @@
   font-size: 1.5em;
   color: #dddddd;
   margin: 0.1em 0;
+  font-weight: normal;
 }
-/* line 58, ../sass/home.scss */
+/* line 59, ../sass/home.scss */
 #image_bar #work_list .work_type p {
   font-size: 1em;
   color: #aaaaaa;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1128px) {
   /* line 39, ../sass/home.scss */
   #image_bar #work_list {
     width: 700px;
     margin: auto;
   }
-  /* line 66, ../sass/home.scss */
+  /* line 67, ../sass/home.scss */
   #image_bar #work_list .work_type {
     width: 300px;
   }
@@ -99,7 +100,7 @@
   }
 }
 
-/* line 76, ../sass/home.scss */
+/* line 77, ../sass/home.scss */
 #content {
   width: 100%;
   color: #666666;

@@ -1,17 +1,44 @@
 @import "config";
 
+#image_bar_company {
+	height: 430px;
+	width: 100%;
+	background-color: #666666;
+	background-image: image-url('home/2.png');
+	background-repeat:no-repeat;
+	position: relative; 
+	@media screen and (max-width: $breakBase) {
+		height: 660px;
+	}
+	@media screen and (max-width: $breakBaseWork) {
+		height: 890px;
+	}
+	#image_top_bar_company {
+		height:6px;
+		background-color: #000000;
+		@include opacity(0.75);	
+	}
+}
+
 #people_content {
 	text-align: center;
 	.quotation {
 		font-style:italic;
 	}
+	p {
+		color: $darkGrey;
+	}
+	.software {
+		color: $baseGreen;
+	}
 }
 
 #people_container {
 	padding: 50px 0 50px 0;
+	width: 902px;
+	margin: auto;
 	@media screen and (max-width: $breakBase) {
-		width: 700px;
-		margin: auto;
+		width: 601px;
 	}
 	@media screen and (max-width: $breakBaseWork) {
 		width: 300px;		
@@ -19,7 +46,7 @@
 }
 
 .person{
-	width: 33%;
+	width: 300px;
 	float: left;
 	cursor: pointer;
 	position: relative;
@@ -50,7 +77,7 @@
 	}
 	span {
 		height: 366px;
-		width: 330px;
+		width: 300px;
 		display: inline-block;
 	}
 	.name-and-place
@@ -62,11 +89,13 @@
 		h1{
 			font-size: 1.5em;
 			font-family: $fontFamilyLogo;
+			font-weight: 600;
 			margin: 0 0;
 		}
 		h2{
 			font-size: 1em;
 			color: $darkGrey;
+			font-weight: 400;
 			margin: 0 0;
 		}
 	}
@@ -84,10 +113,10 @@
 			}			
 		}
 		a {
-			font-size: 0.7em;
-			height: 35px;
-			line-height: 35px;
-			width: 130px;
+			font-size: 0.6em;
+			height: 50px;
+			line-height: 50px;
+			width: 168px;
 			display: block;
 			color: $hoverGrey;
 			background-color: $baseGrey;

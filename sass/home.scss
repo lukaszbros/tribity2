@@ -5,7 +5,7 @@
 	height: 430px;
 	width: 100%;
 	background-color: #666666;
-	background-image: image-url('home/1.png');
+	background-image: image-url('home/3.png');
 	background-repeat:no-repeat;
 	position: relative; 
 	@media screen and (max-width: $breakBase) {
@@ -54,6 +54,7 @@
   				font-size: 1.5em;
   				color: $opacityGrey;
   				margin: 0.1em 0;
+  				font-weight:normal;
   			}
   			p {
   				font-size: 1em;

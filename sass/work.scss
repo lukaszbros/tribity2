@@ -5,13 +5,20 @@
 	.quotation {
 		font-style:italic;
 	}
+	p {
+		color: $darkGrey;
+	}
+	.software {
+		color: $baseGreen;
+	}
 }
 
 #project_container {
 	padding: 50px 0 50px 0;
+	width: 902px;
+	margin: auto;
 	@media screen and (max-width: $breakBase) {
-		width: 700px;
-		margin: auto;
+		width: 601px;
 	}
 	@media screen and (max-width: $breakBaseWork) {
 		width: 300px;		
@@ -61,10 +68,13 @@
 	}
 	h1{
 		font-size: 1.5em;
+		font-family: $fontFamilyLogo;
+		font-weight: 600;
 	}
 	h2{
 		font-size: 1em;
 		color: $darkGrey;
 		padding: 0 20px;
+		font-weight: 400;
 	}
 }
