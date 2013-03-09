@@ -2,7 +2,7 @@
 
 cd ..
 compass compile -c config_production.rb --force
-coffee -o js/ -c coffee/
+coffee -o js/ --join main -c coffee/
 
 rm -rf release/
 mkdir release/

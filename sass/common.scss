@@ -37,6 +37,20 @@ h2 {
 	font-weight: 300;
 }
 
+textarea, input {
+	outline: none;
+    border: 1px solid $hrColor;
+    color: $hrColor;
+    @include input-placeholder($hrColor);
+	&:focus{
+    	outline: none;
+    	border: 1px solid $darkGrey;
+    	color: $darkGrey;
+    	@include input-placeholder($darkGrey);
+	}	
+}
+
+
 .ux {
 	color: $basePink;
 }

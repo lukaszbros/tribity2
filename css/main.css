@@ -290,27 +290,64 @@ h2 {
 }
 
 /* line 40, ../sass/common.scss */
+textarea, input {
+  outline: none;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+/* line 28, ../sass/config.scss */
+textarea.placeholder, input.placeholder {
+  color: #cccccc;
+}
+/* line 31, ../sass/config.scss */
+textarea:-moz-placeholder, input:-moz-placeholder {
+  color: #cccccc;
+}
+/* line 34, ../sass/config.scss */
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+/* line 45, ../sass/common.scss */
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #666666;
+  color: #666666;
+}
+/* line 28, ../sass/config.scss */
+textarea:focus.placeholder, input:focus.placeholder {
+  color: #666666;
+}
+/* line 31, ../sass/config.scss */
+textarea:focus:-moz-placeholder, input:focus:-moz-placeholder {
+  color: #666666;
+}
+/* line 34, ../sass/config.scss */
+textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholder {
+  color: #666666;
+}
+
+/* line 54, ../sass/common.scss */
 .ux {
   color: #e62799;
 }
 
-/* line 43, ../sass/common.scss */
+/* line 57, ../sass/common.scss */
 .design {
   color: #00aed9;
 }
 
-/* line 46, ../sass/common.scss */
+/* line 60, ../sass/common.scss */
 .software {
   color: #00c376;
 }
 
-/* line 50, ../sass/common.scss */
+/* line 64, ../sass/common.scss */
 .container {
   width: 1128px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 50, ../sass/common.scss */
+  /* line 64, ../sass/common.scss */
   .container {
     width: 98%;
     margin-left: 1%;
@@ -318,7 +355,7 @@ h2 {
   }
 }
 
-/* line 60, ../sass/common.scss */
+/* line 74, ../sass/common.scss */
 .button {
   font-size: 1.2em;
   height: 50px;
@@ -331,48 +368,48 @@ h2 {
   text-align: center;
   margin: auto;
 }
-/* line 71, ../sass/common.scss */
+/* line 85, ../sass/common.scss */
 .button:hover {
   background-color: #00c376;
   color: #eeeeee;
 }
 
-/* line 78, ../sass/common.scss */
+/* line 92, ../sass/common.scss */
 header #top_bar {
   width: 100%;
 }
-/* line 80, ../sass/common.scss */
+/* line 94, ../sass/common.scss */
 header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
   height: 6px;
   float: left;
 }
-/* line 84, ../sass/common.scss */
+/* line 98, ../sass/common.scss */
 header #top_bar #color1 {
   width: 45%;
   background-color: #00c376;
 }
-/* line 88, ../sass/common.scss */
+/* line 102, ../sass/common.scss */
 header #top_bar #color2 {
   width: 35%;
   background-color: #00aed9;
 }
-/* line 92, ../sass/common.scss */
+/* line 106, ../sass/common.scss */
 header #top_bar #color3 {
   width: 20%;
   background-color: #e62799;
 }
-/* line 98, ../sass/common.scss */
+/* line 112, ../sass/common.scss */
 header #title_bar {
   height: 75px;
   position: relative;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 102, ../sass/common.scss */
+/* line 116, ../sass/common.scss */
 header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 106, ../sass/common.scss */
+/* line 120, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
   width: 350px;
@@ -380,7 +417,7 @@ header #title_bar #logo {
   font-weight: 700;
   cursor: pointer;
 }
-/* line 112, ../sass/common.scss */
+/* line 126, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
@@ -388,43 +425,43 @@ header #title_bar #logo span {
   cursor: default;
 }
 @media screen and (max-width: 400px) {
-  /* line 106, ../sass/common.scss */
+  /* line 120, ../sass/common.scss */
   header #title_bar #logo {
     width: 300px;
     font-size: 1.5em;
   }
 }
-/* line 123, ../sass/common.scss */
+/* line 137, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 128, ../sass/common.scss */
+/* line 142, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
 }
-/* line 132, ../sass/common.scss */
+/* line 146, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 135, ../sass/common.scss */
+/* line 149, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 138, ../sass/common.scss */
+/* line 152, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 98, ../sass/common.scss */
+  /* line 112, ../sass/common.scss */
   header #title_bar {
     height: 125px;
   }
-  /* line 145, ../sass/common.scss */
+  /* line 159, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
     position: relative;
     left: inherit;
@@ -432,40 +469,40 @@ header #title_bar #menu a:nth-child(3):hover {
     margin: auto;
     text-align: center;
   }
-  /* line 152, ../sass/common.scss */
+  /* line 166, ../sass/common.scss */
   header #title_bar #logo {
     padding: 40px 0 20px 0;
   }
 }
 
-/* line 160, ../sass/common.scss */
+/* line 174, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 220px;
 }
-/* line 165, ../sass/common.scss */
+/* line 179, ../sass/common.scss */
 footer #footer_content {
   width: 200px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 170, ../sass/common.scss */
+/* line 184, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 176, ../sass/common.scss */
+/* line 190, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 181, ../sass/common.scss */
+/* line 195, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;
@@ -869,55 +906,62 @@ footer #footer_content #rights {
   display: block;
   width: 50%;
   float: left;
+  color: #666666;
 }
-/* line 15, ../sass/contact.scss */
+/* line 16, ../sass/contact.scss */
 #contact #contact_form_container ul li {
   width: 100%;
   height: 100px;
   cursor: pointer;
 }
-/* line 19, ../sass/contact.scss */
+/* line 20, ../sass/contact.scss */
 #contact #contact_form_container ul li:hover {
   color: #00c376;
 }
-/* line 22, ../sass/contact.scss */
+/* line 23, ../sass/contact.scss */
 #contact #contact_form_container ul li span {
   margin-left: 200px;
   line-height: 100px;
+  font-size: 2em;
 }
-/* line 28, ../sass/contact.scss */
+/* line 30, ../sass/contact.scss */
 #contact #contact_form_container #contact_form {
   width: 50%;
   float: right;
 }
-/* line 31, ../sass/contact.scss */
+/* line 33, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text'], #contact #contact_form_container #contact_form input[type='email'] {
   height: 40px;
   float: right;
   margin: 10px 0;
+  font-size: 1.5em;
 }
-/* line 36, ../sass/contact.scss */
+/* line 39, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text'] {
   width: 47%;
+  padding-left: 2%;
 }
-/* line 38, ../sass/contact.scss */
+/* line 42, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text']:first-child {
   float: left;
 }
-/* line 42, ../sass/contact.scss */
+/* line 46, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='email'] {
-  width: 99%;
+  width: 98%;
+  padding-left: 2%;
 }
-/* line 45, ../sass/contact.scss */
+/* line 50, ../sass/contact.scss */
 #contact #contact_form_container #contact_form textarea {
   resize: none;
-  width: 98.8%;
+  width: 97.8%;
   height: 200px;
   overflow: auto;
   float: right;
   margin: 10px 0;
+  font-size: 1.5em;
+  padding-left: 2%;
 }
-/* line 53, ../sass/contact.scss */
+/* line 60, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='submit'] {
   float: right;
   border: 0;
