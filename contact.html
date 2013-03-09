@@ -5,16 +5,16 @@
 		<hr>
 		<div id="contact_form_container">
 			<ul>
-				<li>An application</li>
-				<li>A website</li>
-				<li>A game</li>
-				<li>Just wanted to ask ...</li>
+				<li class="icons-apps_icon"><span>An application</span></li>
+				<li class="icons-websites_icon"><span>A website</span></li>
+				<li class="icons-games_icon"><span>A game</span></li>
+				<li class="icons-comment_icon"><span>Just wanted to ask ...</span></li>
 			</ul>
 			<div id="contact_form">
 				<form>
-					<input type="text" name="first_name" placeholder="First name">
-					<input type="text" name="last_name" placeholder="Last name">
-					<input type="email" name="email" placeholder="Email address">
+					<input type="text" name="first_name" placeholder="First name" style="width:50%">
+					<input type="text" name="last_name" placeholder="Last name" style="width:50%">
+					<input type="email" name="email" placeholder="Email address" style="width:100%">
 					<textarea name="project" placeholder="Tell us about your project ..."></textarea>
 					<input type="submit" value="Send it on">
 				</form>
@@ -23,3 +23,7 @@
 		</div>
 	</div>
 </section>
+
+<script>
+      $('textarea').autoResize();
+</script>

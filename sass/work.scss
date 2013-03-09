@@ -26,14 +26,11 @@
 }
 
 .project{
-	height: 400px;
+	height: 320px;
 	width: 33%;
 	float: left;
 	padding: 10px 0 10px 0;
 	cursor: pointer;
-	&:hover {
-		background-color: $hoverGrey;
-	}
 	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
 		border-right: 1px solid $hrColor;
 	}
@@ -70,5 +67,6 @@
 	}
 	h2{
 		color: $darkGrey;
+		font-size:1.2em;
 	}
 }

@@ -279,7 +279,7 @@ h1 {
   font-size: 1.5em;
   font-family: "proxima-nova", sans-serif;
   margin: 0 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* line 34, ../sass/common.scss */
@@ -333,45 +333,46 @@ h2 {
 }
 /* line 71, ../sass/common.scss */
 .button:hover {
-  background-color: #666666;
+  background-color: #00c376;
+  color: #eeeeee;
 }
 
-/* line 77, ../sass/common.scss */
+/* line 78, ../sass/common.scss */
 header #top_bar {
   width: 100%;
 }
-/* line 79, ../sass/common.scss */
+/* line 80, ../sass/common.scss */
 header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
   height: 6px;
   float: left;
 }
-/* line 83, ../sass/common.scss */
+/* line 84, ../sass/common.scss */
 header #top_bar #color1 {
   width: 45%;
   background-color: #00c376;
 }
-/* line 87, ../sass/common.scss */
+/* line 88, ../sass/common.scss */
 header #top_bar #color2 {
   width: 35%;
   background-color: #00aed9;
 }
-/* line 91, ../sass/common.scss */
+/* line 92, ../sass/common.scss */
 header #top_bar #color3 {
   width: 20%;
   background-color: #e62799;
 }
-/* line 97, ../sass/common.scss */
+/* line 98, ../sass/common.scss */
 header #title_bar {
   height: 75px;
   position: relative;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 101, ../sass/common.scss */
+/* line 102, ../sass/common.scss */
 header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 105, ../sass/common.scss */
+/* line 106, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
   width: 350px;
@@ -379,7 +380,7 @@ header #title_bar #logo {
   font-weight: 700;
   cursor: pointer;
 }
-/* line 111, ../sass/common.scss */
+/* line 112, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
@@ -387,43 +388,43 @@ header #title_bar #logo span {
   cursor: default;
 }
 @media screen and (max-width: 400px) {
-  /* line 105, ../sass/common.scss */
+  /* line 106, ../sass/common.scss */
   header #title_bar #logo {
     width: 300px;
     font-size: 1.5em;
   }
 }
-/* line 122, ../sass/common.scss */
+/* line 123, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 127, ../sass/common.scss */
+/* line 128, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
 }
-/* line 131, ../sass/common.scss */
+/* line 132, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 134, ../sass/common.scss */
+/* line 135, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 137, ../sass/common.scss */
+/* line 138, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 97, ../sass/common.scss */
+  /* line 98, ../sass/common.scss */
   header #title_bar {
     height: 125px;
   }
-  /* line 144, ../sass/common.scss */
+  /* line 145, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
     position: relative;
     left: inherit;
@@ -431,40 +432,40 @@ header #title_bar #menu a:nth-child(3):hover {
     margin: auto;
     text-align: center;
   }
-  /* line 151, ../sass/common.scss */
+  /* line 152, ../sass/common.scss */
   header #title_bar #logo {
     padding: 40px 0 20px 0;
   }
 }
 
-/* line 159, ../sass/common.scss */
+/* line 160, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 220px;
 }
-/* line 164, ../sass/common.scss */
+/* line 165, ../sass/common.scss */
 footer #footer_content {
   width: 200px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 169, ../sass/common.scss */
+/* line 170, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 175, ../sass/common.scss */
+/* line 176, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 180, ../sass/common.scss */
+/* line 181, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;
@@ -619,21 +620,17 @@ footer #footer_content #rights {
 
 /* line 28, ../sass/work.scss */
 .project {
-  height: 400px;
+  height: 320px;
   width: 33%;
   float: left;
   padding: 10px 0 10px 0;
   cursor: pointer;
 }
 /* line 34, ../sass/work.scss */
-.project:hover {
-  background-color: #eeeeee;
-}
-/* line 37, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 40, ../sass/work.scss */
+/* line 37, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
@@ -642,38 +639,39 @@ footer #footer_content #rights {
   .project {
     width: 300px;
   }
-  /* line 46, ../sass/work.scss */
+  /* line 43, ../sass/work.scss */
   .project:nth-child(2), .project:nth-child(4) {
     border-right: none;
   }
-  /* line 49, ../sass/work.scss */
+  /* line 46, ../sass/work.scss */
   .project:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 52, ../sass/work.scss */
+  /* line 49, ../sass/work.scss */
   .project:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 57, ../sass/work.scss */
+  /* line 54, ../sass/work.scss */
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5) {
     border-right: none;
   }
-  /* line 60, ../sass/work.scss */
+  /* line 57, ../sass/work.scss */
   .project:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 64, ../sass/work.scss */
+/* line 61, ../sass/work.scss */
 .project span {
   height: 220px;
   width: 300px;
   display: inline-block;
 }
-/* line 71, ../sass/work.scss */
+/* line 68, ../sass/work.scss */
 .project h2 {
   color: #666666;
+  font-size: 1.2em;
 }
 
 /* line 3, ../sass/company.scss */
@@ -849,6 +847,55 @@ footer #footer_content #rights {
 /* line 133, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
+}
+
+/* line 1, ../sass/contact.scss */
+#contact {
+  text-align: center;
+}
+/* line 3, ../sass/contact.scss */
+#contact p {
+  color: #666666;
+}
+/* line 6, ../sass/contact.scss */
+#contact #contact_form_container {
+  text-align: left;
+}
+/* line 8, ../sass/contact.scss */
+#contact #contact_form_container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 50%;
+  float: left;
+}
+/* line 15, ../sass/contact.scss */
+#contact #contact_form_container ul li {
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+/* line 19, ../sass/contact.scss */
+#contact #contact_form_container ul li:hover {
+  color: #00c376;
+}
+/* line 22, ../sass/contact.scss */
+#contact #contact_form_container ul li span {
+  margin-left: 200px;
+  line-height: 100px;
+}
+/* line 28, ../sass/contact.scss */
+#contact #contact_form_container #contact_form {
+  width: 50%;
+  float: left;
+}
+/* line 31, ../sass/contact.scss */
+#contact #contact_form_container #contact_form textarea {
+  resize: none;
+  width: 100%;
+  height: 50px;
+  overflow: auto;
 }
 
 /*

@@ -1,35 +1,23 @@
-$ ->
+$(document).ready ->
   
   #Home page load
-  $.ajax 'company.html',
-      type: 'GET'
-      cache: false
-      success: (data) ->
-        $('#main_content').html(data).fadeIn('fast')
+  $('#main_content').load('contact.html').fadeIn('fast')
   
   #Load page animation function
-  loadContent = (data) ->
+  loadContent = (address) ->
     $('#main_content').fadeOut 'fast', ->
-          $(@).html(data).fadeIn('fast');
+      $(@).load(address).fadeIn('fast')
   
   #Back to home page by clicking logo      
   $('#logo').click ->
-    $.ajax 'home.html',
-      type: 'GET'
-      cache: false
-      success: (data) ->
-        loadContent data
+    loadContent('home.html');
           
   #All links
   $('body').on 'click', 'a:not(.direct)', (event) ->
     event.preventDefault()
     href = $(@).attr("href")
-    $.ajax href,
-      type: 'GET'
-      cache: false      
-      success: (data) ->
-        loadContent data
+    loadContent(href)
         
   #Hover efect for work page
-  #$('body').on 'mouseenter ', '.project', () -> $(@).animate({backgroundColor: "#aaaaaa"})
-  #$('body').on 'mouseleave ', '.project', ()  -> $(@).animate({backgroundColor:'#ffffff'})  
+  $('body').on 'mouseenter ', '.project', () -> $(@).stop().animate({backgroundColor: "#eeeeee"})
+  $('body').on 'mouseleave ', '.project', ()  -> $(@).stop().animate({backgroundColor:'#ffffff'})  

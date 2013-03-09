@@ -1,0 +1,39 @@
+#contact {
+	text-align:center;
+	p {
+		color: $darkGrey;
+	}
+	#contact_form_container{
+		text-align: left;
+		ul {
+			list-style-type: none;
+			padding:0; 
+			margin:0;
+			display:block;
+			width: 50%;
+			float:left;
+			li {
+				width:100%;
+				height:100px;
+				cursor: pointer;
+				&:hover {
+					color: $baseGreen;
+				}
+				span {
+					margin-left: 200px;
+					line-height: 100px;
+				}
+			}
+		}	
+		#contact_form {
+			width: 50%;
+			float:left;
+			textarea {
+				resize: none;
+				width: 100%;
+				height: 50px; 
+				overflow: auto;
+			}
+		}
+	}
+}
