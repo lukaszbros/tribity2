@@ -777,36 +777,54 @@ footer #footer_content #rights {
   background-repeat: no-repeat;
   position: relative;
 }
-@media screen and (max-width: 1128px) {
-  /* line 3, ../sass/company.scss */
-  #image_bar_company {
-    height: 660px;
-  }
-}
 @media screen and (max-width: 700px) {
   /* line 3, ../sass/company.scss */
   #image_bar_company {
-    height: 890px;
+    height: 784px;
   }
 }
-/* line 17, ../sass/company.scss */
+/* line 14, ../sass/company.scss */
 #image_bar_company #image_top_bar_company {
   height: 6px;
   background-color: #000000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
-/* line 23, ../sass/company.scss */
+/* line 19, ../sass/company.scss */
+#image_bar_company #responsibility_list {
+  width: 902px;
+  margin: auto;
+}
+@media screen and (max-width: 1128px) {
+  /* line 19, ../sass/company.scss */
+  #image_bar_company #responsibility_list {
+    width: 601px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 19, ../sass/company.scss */
+  #image_bar_company #responsibility_list {
+    width: 300px;
+  }
+}
+/* line 28, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility {
   width: 50%;
   text-align: left;
   float: left;
 }
-/* line 27, ../sass/company.scss */
+@media screen and (max-width: 700px) {
+  /* line 28, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility {
+    width: 300px;
+    text-align: center;
+  }
+}
+/* line 36, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility h1 {
   font-size: 3em;
 }
-/* line 30, ../sass/company.scss */
+/* line 39, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility ul {
   font-size: 1.5em;
   color: #e6e6e6;
@@ -814,25 +832,32 @@ footer #footer_content #rights {
   padding: 0;
   margin: 0;
 }
-/* line 37, ../sass/company.scss */
+/* line 46, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility a {
   float: left;
-  margin: 72px 54px 0 0;
+  margin: 50px 54px 0 0;
+}
+@media screen and (max-width: 700px) {
+  /* line 46, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility a {
+    float: none;
+    margin: 54px;
+  }
 }
 
-/* line 45, ../sass/company.scss */
+/* line 58, ../sass/company.scss */
 #people_content {
   text-align: center;
 }
-/* line 47, ../sass/company.scss */
+/* line 60, ../sass/company.scss */
 #people_content .quotation {
   font-style: italic;
 }
-/* line 50, ../sass/company.scss */
+/* line 63, ../sass/company.scss */
 #people_content p {
   color: #666666;
 }
-/* line 53, ../sass/company.scss */
+/* line 66, ../sass/company.scss */
 #people_content #logos {
   display: block;
   height: 90px;
@@ -840,31 +865,31 @@ footer #footer_content #rights {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 60, ../sass/company.scss */
+/* line 73, ../sass/company.scss */
 #people_content .software {
   color: #00c376;
 }
 
-/* line 65, ../sass/company.scss */
+/* line 78, ../sass/company.scss */
 #people_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 65, ../sass/company.scss */
+  /* line 78, ../sass/company.scss */
   #people_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 65, ../sass/company.scss */
+  /* line 78, ../sass/company.scss */
   #people_container {
     width: 300px;
   }
 }
 
-/* line 77, ../sass/company.scss */
+/* line 90, ../sass/company.scss */
 .person {
   width: 300px;
   float: left;
@@ -872,80 +897,80 @@ footer #footer_content #rights {
   position: relative;
   height: 300px;
 }
-/* line 83, ../sass/company.scss */
+/* line 96, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5), .person:nth-child(7), .person:nth-child(8) {
   border-right: 1px solid #cccccc;
 }
-/* line 86, ../sass/company.scss */
+/* line 99, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(3), .person:nth-child(4), .person:nth-child(5), .person:nth-child(6) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 77, ../sass/company.scss */
+  /* line 90, ../sass/company.scss */
   .person {
     width: 300px;
   }
-  /* line 91, ../sass/company.scss */
+  /* line 104, ../sass/company.scss */
   .person:nth-child(2), .person:nth-child(4), .person:nth-child(8) {
     border-right: none;
   }
-  /* line 94, ../sass/company.scss */
+  /* line 107, ../sass/company.scss */
   .person:nth-child(3), .person:nth-child(9) {
     border-right: 1px solid #cccccc;
   }
-  /* line 97, ../sass/company.scss */
+  /* line 110, ../sass/company.scss */
   .person:nth-child(4), .person:nth-child(7), .person:nth-child(8) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 102, ../sass/company.scss */
+  /* line 115, ../sass/company.scss */
   .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
     border-right: none;
   }
 }
-/* line 106, ../sass/company.scss */
+/* line 119, ../sass/company.scss */
 .person span {
   height: 300px;
   width: 300px;
   display: inline-block;
 }
-/* line 112, ../sass/company.scss */
+/* line 125, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
   top: 150px;
   left: 0px;
   width: 120px;
 }
-/* line 117, ../sass/company.scss */
+/* line 130, ../sass/company.scss */
 .person .name-and-place h2 {
   color: #666666;
 }
-/* line 120, ../sass/company.scss */
+/* line 133, ../sass/company.scss */
 .person .name-and-place a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 127, ../sass/company.scss */
+/* line 140, ../sass/company.scss */
 .person #join-us {
-  margin-top: 155px;
+  margin-top: 120px;
   font-size: 2em;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 131, ../sass/company.scss */
+/* line 144, ../sass/company.scss */
 .person #join-us span {
   height: inherit;
   display: inline;
   color: #00c376;
   font-weight: bold;
 }
-/* line 136, ../sass/company.scss */
+/* line 149, ../sass/company.scss */
 .person #join-us span #us {
   color: #333333;
 }
-/* line 140, ../sass/company.scss */
+/* line 153, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
 }
