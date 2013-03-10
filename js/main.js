@@ -2,13 +2,23 @@
 (function() {
 
   $(document).ready(function() {
+    $('body').on('mouseenter ', '.purpose:not(.selected-purpose)', function() {
+      return $(this).find('.icon').attr('class', function(i, c) {
+        return c.replace(/_icon/, '_icon_hover');
+      });
+    });
+    $('body').on('mouseleave ', '.purpose:not(.selected-purpose)', function() {
+      return $(this).find('.icon').attr('class', function(i, c) {
+        return c.replace(/_hover/g, '');
+      });
+    });
     return $('body').on('click', '.purpose', function() {
       $('.purpose').removeClass('selected-purpose');
-      $('.purpose').attr('class', function(i, c) {
+      $('.icon').attr('class', function(i, c) {
         return c.replace(/_hover/g, '');
       });
       $(this).addClass('selected-purpose');
-      $(this).attr('class', function(i, c) {
+      $(this).find('.icon').attr('class', function(i, c) {
         return c.replace(/_icon/, '_icon_hover');
       });
       console.log($(this).attr('id'));
@@ -18,10 +28,16 @@
 
   $(document).ready(function() {
     var loadContent;
-    $('#main_content').load('company.html').fadeIn('fast');
+    $('#main_content').load('contact.html', function() {
+      return $(this).fadeIn('fast');
+    });
     loadContent = function(address) {
+      $('footer').fadeOut('fast');
       return $('#main_content').fadeOut('fast', function() {
-        return $(this).load(address).fadeIn('fast');
+        return $(this).load(address, function() {
+          $(this).fadeIn('fast');
+          return $('footer').fadeIn('fast');
+        });
       });
     };
     $('#logo').click(function() {
