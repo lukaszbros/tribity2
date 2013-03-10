@@ -176,9 +176,9 @@ textarea {
   background-position: 0 -1052px;
 }
 
-/* line 82, work/*.png */
-.work-sprite, .work-work-tiles1, .work-work-tiles2, .work-work-tiles3, .work-work-tiles4, .work-work-tiles5, .work-work-tiles6 {
-  background: url('/tribity2/img/work-scddbb80bb6.png') no-repeat;
+/* line 90, work/*.png */
+.work-sprite, .work-work-tiles1, .work-work-tiles2, .work-work-tiles3, .work-work-tiles4, .work-work-tiles5, .work-work-tiles6, .work-work-tiles7 {
+  background: url('/tribity2/img/work-s10b8087e9f.png') no-repeat;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -188,17 +188,17 @@ textarea {
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .work-work-tiles2 {
-  background-position: 0 -880px;
+  background-position: 0 -1100px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .work-work-tiles3 {
-  background-position: 0 -660px;
+  background-position: 0 -880px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .work-work-tiles4 {
-  background-position: 0 -440px;
+  background-position: 0 -660px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -208,42 +208,47 @@ textarea {
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .work-work-tiles6 {
-  background-position: 0 -1100px;
+  background-position: 0 -1320px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.work-work-tiles7 {
+  background-position: 0 -440px;
 }
 
 /* line 82, company/team/*.png */
 .team-sprite, .team-team-photo-generic, .team-team-photo1, .team-team-photo2, .team-team-photo3, .team-team-photo4, .team-team-photo5 {
-  background: url('/tribity2/img/company/team-s7fdf3e48ef.png') no-repeat;
+  background: url('/tribity2/img/company/team-s4bafcd5d33.png') no-repeat;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .team-team-photo-generic {
-  background-position: 0 -1830px;
+  background-position: 0 -1566px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .team-team-photo1 {
-  background-position: 0 0;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.team-team-photo2 {
-  background-position: 0 -1098px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.team-team-photo3 {
-  background-position: 0 -732px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.team-team-photo4 {
   background-position: 0 -366px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.team-team-photo2 {
+  background-position: 0 -666px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.team-team-photo3 {
+  background-position: 0 -966px;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.team-team-photo4 {
+  background-position: 0 0;
+}
+
+/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .team-team-photo5 {
-  background-position: 0 -1464px;
+  background-position: 0 -1266px;
 }
 
 /*
@@ -777,111 +782,119 @@ footer #footer_content #rights {
   color: #666666;
 }
 /* line 53, ../sass/company.scss */
+#people_content #logos {
+  display: block;
+  height: 90px;
+  background-image: url('/tribity2/img/company/tech-logo-set.png?1362872986');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 60, ../sass/company.scss */
 #people_content .software {
   color: #00c376;
 }
 
-/* line 58, ../sass/company.scss */
+/* line 65, ../sass/company.scss */
 #people_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 58, ../sass/company.scss */
+  /* line 65, ../sass/company.scss */
   #people_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 58, ../sass/company.scss */
+  /* line 65, ../sass/company.scss */
   #people_container {
     width: 300px;
   }
 }
 
-/* line 70, ../sass/company.scss */
+/* line 77, ../sass/company.scss */
 .person {
   width: 300px;
   float: left;
   cursor: pointer;
   position: relative;
-  height: 366px;
+  height: 300px;
 }
-/* line 76, ../sass/company.scss */
+/* line 83, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5), .person:nth-child(7), .person:nth-child(8) {
   border-right: 1px solid #cccccc;
 }
-/* line 79, ../sass/company.scss */
+/* line 86, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(3), .person:nth-child(4), .person:nth-child(5), .person:nth-child(6) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 70, ../sass/company.scss */
+  /* line 77, ../sass/company.scss */
   .person {
     width: 300px;
   }
-  /* line 84, ../sass/company.scss */
+  /* line 91, ../sass/company.scss */
   .person:nth-child(2), .person:nth-child(4), .person:nth-child(8) {
     border-right: none;
   }
-  /* line 87, ../sass/company.scss */
+  /* line 94, ../sass/company.scss */
   .person:nth-child(3), .person:nth-child(9) {
     border-right: 1px solid #cccccc;
   }
-  /* line 90, ../sass/company.scss */
+  /* line 97, ../sass/company.scss */
   .person:nth-child(4), .person:nth-child(7), .person:nth-child(8) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 95, ../sass/company.scss */
+  /* line 102, ../sass/company.scss */
   .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
     border-right: none;
   }
 }
-/* line 99, ../sass/company.scss */
+/* line 106, ../sass/company.scss */
 .person span {
   height: 366px;
   width: 300px;
   display: inline-block;
 }
-/* line 105, ../sass/company.scss */
+/* line 112, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
   top: 200px;
   left: 10px;
   width: 160px;
 }
-/* line 110, ../sass/company.scss */
+/* line 117, ../sass/company.scss */
 .person .name-and-place h2 {
   color: #666666;
 }
-/* line 113, ../sass/company.scss */
+/* line 120, ../sass/company.scss */
 .person .name-and-place a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 120, ../sass/company.scss */
+/* line 127, ../sass/company.scss */
 .person #join-us {
   margin-top: 155px;
   font-size: 2em;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 124, ../sass/company.scss */
+/* line 131, ../sass/company.scss */
 .person #join-us span {
   height: inherit;
   display: inline;
   color: #00c376;
   font-weight: bold;
 }
-/* line 129, ../sass/company.scss */
+/* line 136, ../sass/company.scss */
 .person #join-us span #us {
   color: #333333;
 }
-/* line 133, ../sass/company.scss */
+/* line 140, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
 }

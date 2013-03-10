@@ -18,7 +18,7 @@
 
   $(document).ready(function() {
     var loadContent;
-    $('#main_content').load('contact.html').fadeIn('fast');
+    $('#main_content').load('work.html').fadeIn('fast');
     loadContent = function(address) {
       return $('#main_content').fadeOut('fast', function() {
         return $(this).load(address).fadeIn('fast');
@@ -27,11 +27,14 @@
     $('#logo').click(function() {
       return loadContent('home.html');
     });
-    return $('body').on('click', 'a:not(.direct)', function(event) {
+    $('body').on('click', 'a:not(.direct)', function(event) {
       var href;
       event.preventDefault();
       href = $(this).attr("href");
       return loadContent(href);
+    });
+    return $('body').on('click', '.project', function() {
+      return loadContent('work-' + $(this).attr('id') + '.html');
     });
   });
 

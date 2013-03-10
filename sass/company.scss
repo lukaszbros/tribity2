@@ -50,6 +50,13 @@
 	p {
 		color: $darkGrey;
 	}
+	#logos {
+		display: block;
+		height: 90px;
+		background-image: image-url('company/tech-logo-set.png');
+		background-position:center;
+		background-repeat:no-repeat;
+	}
 	.software {
 		color: $baseGreen;
 	}
@@ -72,7 +79,7 @@
 	float: left;
 	cursor: pointer;
 	position: relative;
-	height: 366px;
+	height: 300px;
 	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7), &:nth-child(8) {
 		border-right: 1px solid $hrColor;
 	}

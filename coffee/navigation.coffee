@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load('contact.html').fadeIn('fast')
+  $('#main_content').load('work.html').fadeIn('fast')
   
   #Load page animation function
   loadContent = (address) ->
@@ -17,3 +17,6 @@ $(document).ready ->
     event.preventDefault()
     href = $(@).attr("href")
     loadContent(href)
+    
+  $('body').on 'click', '.project', ->
+    loadContent('work-' + $(@).attr('id') + '.html')
