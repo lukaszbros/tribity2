@@ -28,15 +28,28 @@
   });
 
   $(document).ready(function() {
-    var loadContent;
+    var loadContent, selectLogo;
     $('#main_content').load('work-racinglife.html', function() {
       return $(this).fadeIn('fast');
     });
+    selectLogo = function(address) {
+      switch (address) {
+        case 'home.html':
+          return $('logo').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>');
+        case 'work.html':
+          return $('logo').html('Tribity<span class="grey">\'s work</span>');
+      }
+    };
     loadContent = function(address) {
       $('footer').fadeOut('fast');
+      $('#logo').hide("slide", {
+        direction: "up"
+      }, 'fast');
       return $('#main_content').fadeOut('fast', function() {
         return $(this).load(address, function() {
           $(this).fadeIn('fast');
+          selectLogo(address);
+          $('#logo').slideDown();
           return $('footer').fadeIn('fast');
         });
       });
