@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load 'contact.html', ->
+  $('#main_content').load 'work-racinglife.html', ->
     $(@).fadeIn('fast')
   
   #Load page animation function

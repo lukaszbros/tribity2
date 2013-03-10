@@ -1,8 +1,9 @@
+
+
 <section id="work">
 	<div id="work_content_details" class="container">
-		<div id="screenshot_computer">
-			<div id="screenshot" style="background-image: url('img/work_details/racinglife/screen1.png');"></div>
-		</div>
+		<img id="screenshot_computer" src="img/work_details/macbook.png">
+		<img id="screenshot" src="img/work_details/racinglife/screen1.png">
 		<p>Probably the best online, free to play, motorsport management game out there</p>
 		<hr>
 		<p><a href="http://racinglife.net/" target="_blank" class="software">racinglife.net</a></p>
@@ -40,3 +41,14 @@ Cookie marzipan cupcake pastry jujubes wafer powder cheesecake.</div>
 		<hr>
 	</div>
 </section>
+
+<script>
+	var img = $('#screenshot')
+	img.load(function() {
+		height = $('#screenshot').height();
+    	console.log(height);
+		$('#screenshot').css('top', height * 0.0641026);
+	});
+	
+	img.attr('src', 'img/work_details/racinglife/screen1.png');
+</script>
