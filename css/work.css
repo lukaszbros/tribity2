@@ -16,25 +16,75 @@
 }
 
 /* line 16, ../sass/work.scss */
+#work_content_details {
+  text-align: center;
+}
+/* line 18, ../sass/work.scss */
+#work_content_details .quotation {
+  font-style: italic;
+}
+/* line 21, ../sass/work.scss */
+#work_content_details p {
+  color: #666666;
+}
+/* line 24, ../sass/work.scss */
+#work_content_details div {
+  font-size: 1.5em;
+  width: 50%;
+  text-align: left;
+}
+/* line 29, ../sass/work.scss */
+#work_content_details .software {
+  color: #00c376;
+}
+/* line 32, ../sass/work.scss */
+#work_content_details #screenshot_computer {
+  position: relative;
+  background-image: url('/tribity2/img/work_details/macbook.png?1362523231');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
+/* line 39, ../sass/work.scss */
+#work_content_details #screenshot_computer #screenshot {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 821px;
+  height: 513px;
+  top: 63px;
+  left: 152px;
+}
+/* line 49, ../sass/work.scss */
+#work_content_details .floaty-left {
+  float: left;
+}
+/* line 52, ../sass/work.scss */
+#work_content_details .floaty-right {
+  float: right;
+}
+
+/* line 57, ../sass/work.scss */
 #project_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 16, ../sass/work.scss */
+  /* line 57, ../sass/work.scss */
   #project_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 16, ../sass/work.scss */
+  /* line 57, ../sass/work.scss */
   #project_container {
     width: 300px;
   }
 }
 
-/* line 28, ../sass/work.scss */
+/* line 69, ../sass/work.scss */
 .project {
   height: 320px;
   width: 33%;
@@ -42,50 +92,51 @@
   padding: 10px 0 10px 0;
   cursor: pointer;
 }
-/* line 34, ../sass/work.scss */
+/* line 75, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 37, ../sass/work.scss */
+/* line 78, ../sass/work.scss */
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 28, ../sass/work.scss */
+  /* line 69, ../sass/work.scss */
   .project {
     width: 300px;
   }
-  /* line 43, ../sass/work.scss */
+  /* line 84, ../sass/work.scss */
   .project:nth-child(2), .project:nth-child(4) {
     border-right: none;
   }
-  /* line 46, ../sass/work.scss */
+  /* line 87, ../sass/work.scss */
   .project:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 49, ../sass/work.scss */
+  /* line 90, ../sass/work.scss */
   .project:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 54, ../sass/work.scss */
+  /* line 95, ../sass/work.scss */
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5) {
     border-right: none;
   }
-  /* line 57, ../sass/work.scss */
+  /* line 98, ../sass/work.scss */
   .project:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 61, ../sass/work.scss */
+/* line 102, ../sass/work.scss */
 .project span {
   height: 220px;
   width: 300px;
   display: inline-block;
 }
-/* line 68, ../sass/work.scss */
+/* line 109, ../sass/work.scss */
 .project h2 {
   color: #666666;
   font-size: 1.2em;
+  padding: 0 10px;
 }

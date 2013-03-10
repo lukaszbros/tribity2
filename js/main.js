@@ -18,7 +18,7 @@
 
   $(document).ready(function() {
     var loadContent;
-    $('#main_content').load('work.html').fadeIn('fast');
+    $('#main_content').load('company.html').fadeIn('fast');
     loadContent = function(address) {
       return $('#main_content').fadeOut('fast', function() {
         return $(this).load(address).fadeIn('fast');

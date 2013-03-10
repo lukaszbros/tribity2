@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load('work.html').fadeIn('fast')
+  $('#main_content').load('company.html').fadeIn('fast')
   
   #Load page animation function
   loadContent = (address) ->

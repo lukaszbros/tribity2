@@ -6,7 +6,7 @@
 	background-color: #666666;
 	background-image: image-url('home/2.png');
 	background-position:center;
-	background-repeat:no-repeat;
+	background-repeat:no-repeat; 
 	position: relative; 
 	@media screen and (max-width: $breakBase) {
 		height: 660px;
@@ -104,16 +104,16 @@
 		}
 	}
 	span {
-		height: 366px;
+		height: 300px;
 		width: 300px;
 		display: inline-block;
 	}
 	.name-and-place
 	{
 		position: absolute;
-		top: 200px;
-		left: 10px;
-		width: 160px;
+		top: 150px;
+		left: 0px;
+		width: 120px;
 		h2{			
 			color: $darkGrey;
 		}

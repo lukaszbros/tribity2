@@ -12,6 +12,47 @@
 		color: $baseGreen;
 	}
 }
+ 
+#work_content_details {
+	text-align: center;
+	.quotation {
+		font-style:italic;
+	}
+	p {
+		color: $darkGrey;
+	}
+	div {
+		font-size: 1.5em;
+		width:50%;
+		text-align:left;
+	}
+	.software {
+		color: $baseGreen;
+	}
+	#screenshot_computer {
+		position: relative;
+		background-image: image-url('work_details/macbook.png');
+		background-position:center;
+		background-repeat:no-repeat;
+		width: 100%;
+		height: 700px;
+		#screenshot {
+			position: absolute;
+			background-position:center;
+			background-repeat:no-repeat;
+			width: 821px;
+			height: 513px;
+			top: 63px;
+			left: 152px;
+		}
+	}
+	.floaty-left {
+		float:left;
+	}
+	.floaty-right {
+		float:right;
+	}
+}
 
 #project_container {
 	padding: 50px 0 50px 0;
@@ -68,5 +109,6 @@
 	h2{
 		color: $darkGrey;
 		font-size:1.2em;
+		padding: 0 10px;
 	}
 }
