@@ -1,1 +1,207 @@
-#image_bar_company{height:430px;width:100%;background-color:#666666;background-image:url('/new/img/home/2.png?1362523204');background-position:center top;background-repeat:no-repeat;position:relative}@media screen and (max-width: 700px){#image_bar_company{height:784px}}#image_bar_company #image_top_bar_company{height:6px;background-color:#000000;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);opacity:0.75}#image_bar_company #responsibility_list{width:902px;margin:auto}@media screen and (max-width: 1128px){#image_bar_company #responsibility_list{width:601px}}@media screen and (max-width: 700px){#image_bar_company #responsibility_list{width:300px}}#image_bar_company #responsibility_list .responsibility{width:50%;text-align:left;float:left}@media screen and (max-width: 700px){#image_bar_company #responsibility_list .responsibility{width:300px;text-align:center}}#image_bar_company #responsibility_list .responsibility h1{font-size:3em}#image_bar_company #responsibility_list .responsibility ul{font-size:1.5em;color:#e6e6e6;list-style-type:none;padding:0;margin:0}#image_bar_company #responsibility_list .responsibility a{float:left;margin:50px 54px 0 0}@media screen and (max-width: 700px){#image_bar_company #responsibility_list .responsibility a{float:none;margin:54px}}#people_content{text-align:center}#people_content .quotation{font-style:italic}#people_content p{color:#666}#people_content #logos{display:block;height:90px;background-image:url('/new/img/company/tech-logo-set.png?1362872986');background-position:center;background-repeat:no-repeat}#people_content .software{color:#00c376}#people_container{padding:50px 0 50px 0;width:902px;margin:auto}@media screen and (max-width: 1128px){#people_container{width:601px}}@media screen and (max-width: 700px){#people_container{width:300px}}.person{width:300px;float:left;cursor:pointer;position:relative;height:300px}.person:nth-child(1),.person:nth-child(2),.person:nth-child(4),.person:nth-child(5),.person:nth-child(7),.person:nth-child(8){border-right:1px solid #ccc}.person:nth-child(1),.person:nth-child(2),.person:nth-child(3),.person:nth-child(4),.person:nth-child(5),.person:nth-child(6){border-bottom:1px solid #ccc}@media screen and (max-width: 1128px){.person{width:300px}.person:nth-child(2),.person:nth-child(4),.person:nth-child(8){border-right:none}.person:nth-child(3),.person:nth-child(9){border-right:1px solid #ccc}.person:nth-child(4),.person:nth-child(7),.person:nth-child(8){border-bottom:1px solid #ccc}}@media screen and (max-width: 700px){.person:nth-child(1),.person:nth-child(3),.person:nth-child(5),.person:nth-child(7),.person:nth-child(9){border-right:none}}.person span{height:300px;width:300px;display:inline-block}.person .name-and-place{position:absolute;top:150px;left:0px;width:120px}.person .name-and-place h2{color:#666}.person .name-and-place a{height:26px;width:26px;display:inline-block;margin:0 1px 0 1px}.person #join-us{margin-top:120px;font-size:2em;font-family:"proxima-nova",sans-serif}.person #join-us span{height:inherit;display:inline;color:#00c376;font-weight:bold}.person #join-us span #us{color:#333}.person #join-us a{font-size:0.6em}
+/* line 4, ../sass/company.scss */
+#image_bar_company {
+  height: 430px;
+  width: 100%;
+  background-color: #666666;
+  background-image: url('/tribity2/img/home/2.png?1362523204');
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 700px) {
+  /* line 4, ../sass/company.scss */
+  #image_bar_company {
+    height: 784px;
+  }
+}
+/* line 15, ../sass/company.scss */
+#image_bar_company #image_top_bar_company {
+  height: 6px;
+  background-color: #000000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+/* line 20, ../sass/company.scss */
+#image_bar_company #responsibility_list {
+  width: 902px;
+  margin: auto;
+}
+@media screen and (max-width: 1128px) {
+  /* line 20, ../sass/company.scss */
+  #image_bar_company #responsibility_list {
+    width: 601px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 20, ../sass/company.scss */
+  #image_bar_company #responsibility_list {
+    width: 300px;
+  }
+}
+/* line 29, ../sass/company.scss */
+#image_bar_company #responsibility_list .responsibility {
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+@media screen and (max-width: 700px) {
+  /* line 29, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility {
+    width: 300px;
+    text-align: center;
+  }
+}
+/* line 37, ../sass/company.scss */
+#image_bar_company #responsibility_list .responsibility h1 {
+  font-size: 3em;
+}
+/* line 40, ../sass/company.scss */
+#image_bar_company #responsibility_list .responsibility ul {
+  font-size: 1.5em;
+  color: #e6e6e6;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 47, ../sass/company.scss */
+#image_bar_company #responsibility_list .responsibility a {
+  float: left;
+  margin: 50px 54px 0 0;
+}
+@media screen and (max-width: 700px) {
+  /* line 47, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility a {
+    float: none;
+    margin: 54px;
+  }
+}
+
+/* line 59, ../sass/company.scss */
+#people_content {
+  text-align: center;
+}
+/* line 61, ../sass/company.scss */
+#people_content .quotation {
+  font-style: italic;
+}
+/* line 64, ../sass/company.scss */
+#people_content p {
+  color: #666666;
+}
+/* line 67, ../sass/company.scss */
+#people_content #logos {
+  display: block;
+  height: 90px;
+  background-image: url('/tribity2/img/company/tech-logo-set.png?1362872986');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 74, ../sass/company.scss */
+#people_content .software {
+  color: #00c376;
+}
+
+/* line 79, ../sass/company.scss */
+#people_container {
+  padding: 50px 0 50px 0;
+  width: 902px;
+  margin: auto;
+}
+@media screen and (max-width: 1128px) {
+  /* line 79, ../sass/company.scss */
+  #people_container {
+    width: 601px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 79, ../sass/company.scss */
+  #people_container {
+    width: 300px;
+  }
+}
+
+/* line 91, ../sass/company.scss */
+.person {
+  width: 300px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  height: 300px;
+}
+/* line 97, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5), .person:nth-child(7), .person:nth-child(8) {
+  border-right: 1px solid #cccccc;
+}
+/* line 100, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(3), .person:nth-child(4), .person:nth-child(5), .person:nth-child(6) {
+  border-bottom: 1px solid #cccccc;
+}
+@media screen and (max-width: 1128px) {
+  /* line 91, ../sass/company.scss */
+  .person {
+    width: 300px;
+  }
+  /* line 105, ../sass/company.scss */
+  .person:nth-child(2), .person:nth-child(4), .person:nth-child(8) {
+    border-right: none;
+  }
+  /* line 108, ../sass/company.scss */
+  .person:nth-child(3), .person:nth-child(9) {
+    border-right: 1px solid #cccccc;
+  }
+  /* line 111, ../sass/company.scss */
+  .person:nth-child(4), .person:nth-child(7), .person:nth-child(8) {
+    border-bottom: 1px solid #cccccc;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 116, ../sass/company.scss */
+  .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
+    border-right: none;
+  }
+}
+/* line 120, ../sass/company.scss */
+.person span {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+}
+/* line 126, ../sass/company.scss */
+.person .name-and-place {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  width: 120px;
+}
+/* line 131, ../sass/company.scss */
+.person .name-and-place h2 {
+  color: #666666;
+}
+/* line 134, ../sass/company.scss */
+.person .name-and-place a {
+  height: 26px;
+  width: 26px;
+  display: inline-block;
+  margin: 0 1px 0 1px;
+}
+/* line 141, ../sass/company.scss */
+.person #join-us {
+  margin-top: 120px;
+  font-size: 2em;
+  font-family: "proxima-nova", sans-serif;
+}
+/* line 145, ../sass/company.scss */
+.person #join-us span {
+  height: inherit;
+  display: inline;
+  color: #00c376;
+  font-weight: bold;
+}
+/* line 150, ../sass/company.scss */
+.person #join-us span #us {
+  color: #333333;
+}
+/* line 154, ../sass/company.scss */
+.person #join-us a {
+  font-size: 0.6em;
+}
