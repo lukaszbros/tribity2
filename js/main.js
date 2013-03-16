@@ -28,7 +28,7 @@
 
   $(document).ready(function() {
     var loadContent, selectLogo;
-    $('#main_content').load('work-nieodpuszczaj.html', function() {
+    $('#main_content').load('work-quantoo.html', function() {
       return $(this).fadeIn('fast');
     });
     selectLogo = function(address) {

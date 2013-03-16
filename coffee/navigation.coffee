@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load 'work-nieodpuszczaj.html', ->
+  $('#main_content').load 'work-quantoo.html', ->
     $(@).fadeIn('fast')
     
   #Select logo text depending on shown address
