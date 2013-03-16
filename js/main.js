@@ -28,7 +28,7 @@
 
   $(document).ready(function() {
     var loadContent, selectLogo;
-    $('#main_content').load('work-ginger.html', function() {
+    $('#main_content').load('work-opony360.html', function() {
       return $(this).fadeIn('fast');
     });
     selectLogo = function(address) {
