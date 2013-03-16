@@ -28,7 +28,7 @@
 
   $(document).ready(function() {
     var loadContent, selectLogo;
-    $('#main_content').load('work-operacjazabieg.html', function() {
+    $('#main_content').load('work-ginger.html', function() {
       return $(this).fadeIn('fast');
     });
     selectLogo = function(address) {
