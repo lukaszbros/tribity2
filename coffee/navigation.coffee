@@ -1,24 +1,26 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load 'work-opony360.html', ->
+  $('#main_content').load 'home.html', ->
     $(@).fadeIn('fast')
     
   #Select logo text depending on shown address
   selectLogo = (address)->
     switch address
-      when 'home.html' then $('logo').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>')
-      when 'work.html' then $('logo').html('Tribity<span class="grey">\'s work</span>')
+      when 'home.html' then $('#logo .absolut-center').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>')
+      when 'work.html' then $('#logo .absolut-center').html('Tribity<span class="subpage">\'s work</span>')
+      when 'contact.html' then $('#logo .absolut-center').html('Tribity<span class="subpage">\'s contact</span>')
+      when 'company.html' then $('#logo .absolut-center').html('Tribity<span class="subpage">\'s company</span>')
     
   #Load page animation function
   loadContent = (address) ->
     $('footer').fadeOut 'fast'
-    $('#logo').hide("slide", { direction: "up" }, 'fast')
+    $('#logo .absolut-center').hide("slide", { direction: "up" }, 'fast')
     $('#main_content').fadeOut 'fast', ->
       $(@).load address, ->
         $(@).fadeIn('fast')
         selectLogo(address)
-        $('#logo').slideDown();
+        $('#logo .absolut-center').slideDown();
         $('footer').fadeIn 'fast'
   
   #Back to home page by clicking logo      
@@ -33,3 +35,7 @@ $(document).ready ->
     
   $('body').on 'click', '.project', ->
     loadContent('work-' + $(@).attr('id') + '.html')
+    
+  #Hover efect on logo
+  $('body').on 'mouseenter ', '#logo .absolut-center', () -> $(@).stop().animate({color: "#cccccc"})
+  $('body').on 'mouseleave ', '#logo .absolut-center', ()  -> $(@).stop().animate({color:'#333333'})  

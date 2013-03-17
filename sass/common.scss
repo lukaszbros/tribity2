@@ -7,6 +7,10 @@
 
 @import "config";
 
+html {
+	overflow-y: scroll;
+}
+
 body{	
 	background: $bgColor;
 	font-family: $fontFamilyBase;
@@ -127,7 +131,12 @@ header {
 				font-weight: 300;
 				font-size:0.8em;
 				margin-left:1%;
-				cursor: default;
+				cursor: pointer;
+			}
+			.subpage {
+				font-size:1em;
+				font-weight: 700;
+				color: $hrColor;
 			}
 			@media screen and (max-width: $breakLogo) {
     			width: 300px;
@@ -157,14 +166,21 @@ header {
 		@media screen and (max-width: $breakBaseMenu) {
 			height: 125px;
   			#logo, #menu {
-  				position: relative;
+  				position: absolute;
   				left:inherit;
   				right:inherit;
-  				margin: auto;
   				text-align:center; 
+  				/*left: 50%;*/
   			}
-  			#logo {
-  				padding: 40px 0 20px 0;  			
+  			#logo { 
+  				top: 21px;			
+  			}
+  			#menu {
+  				top: 85px;  			
+  			}
+  			.absolut-center{
+  				position: relative;
+  				/*left: -50%;*/
   			}
 			
 		}

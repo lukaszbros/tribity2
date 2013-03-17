@@ -28,27 +28,31 @@
 
   $(document).ready(function() {
     var loadContent, selectLogo;
-    $('#main_content').load('work-opony360.html', function() {
+    $('#main_content').load('home.html', function() {
       return $(this).fadeIn('fast');
     });
     selectLogo = function(address) {
       switch (address) {
         case 'home.html':
-          return $('logo').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>');
+          return $('#logo .absolut-center').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>');
         case 'work.html':
-          return $('logo').html('Tribity<span class="grey">\'s work</span>');
+          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s work</span>');
+        case 'contact.html':
+          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s contact</span>');
+        case 'company.html':
+          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s company</span>');
       }
     };
     loadContent = function(address) {
       $('footer').fadeOut('fast');
-      $('#logo').hide("slide", {
+      $('#logo .absolut-center').hide("slide", {
         direction: "up"
       }, 'fast');
       return $('#main_content').fadeOut('fast', function() {
         return $(this).load(address, function() {
           $(this).fadeIn('fast');
           selectLogo(address);
-          $('#logo').slideDown();
+          $('#logo .absolut-center').slideDown();
           return $('footer').fadeIn('fast');
         });
       });
@@ -62,8 +66,18 @@
       href = $(this).attr("href");
       return loadContent(href);
     });
-    return $('body').on('click', '.project', function() {
+    $('body').on('click', '.project', function() {
       return loadContent('work-' + $(this).attr('id') + '.html');
+    });
+    $('body').on('mouseenter ', '#logo .absolut-center', function() {
+      return $(this).stop().animate({
+        color: "#cccccc"
+      });
+    });
+    return $('body').on('mouseleave ', '#logo .absolut-center', function() {
+      return $(this).stop().animate({
+        color: '#333333'
+      });
     });
   });
 
