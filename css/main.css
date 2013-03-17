@@ -1126,12 +1126,18 @@ footer #footer_content #rights {
 #contact #contact_form_container #contact_form input[type='text']:first-child {
   float: left;
 }
-/* line 79, ../sass/contact.scss */
+@media screen and (max-width: 500px) {
+  /* line 72, ../sass/contact.scss */
+  #contact #contact_form_container #contact_form input[type='text'] {
+    width: 98%;
+  }
+}
+/* line 83, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='email'] {
   width: 98%;
   padding-left: 2%;
 }
-/* line 83, ../sass/contact.scss */
+/* line 87, ../sass/contact.scss */
 #contact #contact_form_container #contact_form textarea {
   resize: none;
   width: 97.8%;
@@ -1142,14 +1148,14 @@ footer #footer_content #rights {
   font-size: 1.5em;
   padding-left: 2%;
 }
-/* line 93, ../sass/contact.scss */
+/* line 97, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='submit'] {
   float: right;
   border: 0;
   margin: 10px 0;
 }
 
-/* line 102, ../sass/contact.scss */
+/* line 106, ../sass/contact.scss */
 .selected-purpose {
   color: #00c376;
 }

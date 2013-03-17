@@ -75,6 +75,10 @@
 				&:first-child{
 					float: left;
 				}
+				@media screen and (max-width: $breakContactForm) 
+				{
+					width:98%;
+				}
 			}
 			input[type='email'] {
 				width: 98%;
