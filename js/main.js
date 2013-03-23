@@ -28,7 +28,7 @@
 
   $(document).ready(function() {
     var loadContent, selectLogo;
-    $('#main_content').load('contact.html', function() {
+    $('#main_content').load('work.html', function() {
       return $(this).fadeIn('fast');
     });
     selectLogo = function(address) {

@@ -772,45 +772,41 @@ footer #footer_content #rights {
 .project:nth-child(1), .project:nth-child(2), .project:nth-child(4), .project:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 84, ../sass/work.scss */
-.project:nth-child(1), .project:nth-child(2), .project:nth-child(3) {
-  border-bottom: 1px solid #cccccc;
-}
 @media screen and (max-width: 1128px) {
   /* line 75, ../sass/work.scss */
   .project {
     width: 300px;
   }
-  /* line 90, ../sass/work.scss */
+  /* line 87, ../sass/work.scss */
   .project:nth-child(2), .project:nth-child(4) {
     border-right: none;
   }
-  /* line 93, ../sass/work.scss */
+  /* line 90, ../sass/work.scss */
   .project:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 96, ../sass/work.scss */
-  .project:nth-child(4) {
+  /* line 93, ../sass/work.scss */
+  .project:nth-child(1), .project:nth-child(2) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 101, ../sass/work.scss */
+  /* line 98, ../sass/work.scss */
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5) {
     border-right: none;
   }
-  /* line 104, ../sass/work.scss */
+  /* line 101, ../sass/work.scss */
   .project:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 108, ../sass/work.scss */
+/* line 105, ../sass/work.scss */
 .project span {
   height: 220px;
   width: 300px;
   display: inline-block;
 }
-/* line 115, ../sass/work.scss */
+/* line 112, ../sass/work.scss */
 .project h2 {
   color: #666666;
   font-size: 1.2em;

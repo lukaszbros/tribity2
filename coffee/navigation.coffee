@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load 'contact.html', ->
+  $('#main_content').load 'work.html', ->
     $(@).fadeIn('fast')
     
   #Select logo text depending on shown address
