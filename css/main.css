@@ -227,7 +227,7 @@ textarea {
 
 /* line 82, company/team/*.png */
 .team-sprite, .team-team-photo-generic, .team-team-photo1, .team-team-photo2, .team-team-photo3, .team-team-photo4, .team-team-photo5 {
-  background: url('/tribity2/img/company/team-sa45edc60a7.png') no-repeat;
+  background: url('/tribity2/img/company/team-s6638129a35.png') no-repeat;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -237,7 +237,7 @@ textarea {
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .team-team-photo1 {
-  background-position: 0 0;
+  background-position: 0 -300px;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -252,7 +252,7 @@ textarea {
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .team-team-photo4 {
-  background-position: 0 -300px;
+  background-position: 0 0;
 }
 
 /* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -386,107 +386,109 @@ textarea:focus::-webkit-input-placeholder, input:focus::-webkit-input-placeholde
   text-decoration: none;
   text-align: center;
   margin: auto;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
 }
-/* line 89, ../sass/common.scss */
+/* line 91, ../sass/common.scss */
 .button:hover {
   background-color: #00c376;
-  color: #eeeeee;
+  color: #333333;
 }
 
-/* line 96, ../sass/common.scss */
+/* line 98, ../sass/common.scss */
 header #top_bar {
   width: 100%;
 }
-/* line 98, ../sass/common.scss */
+/* line 100, ../sass/common.scss */
 header #top_bar #color1, header #top_bar #color2, header #top_bar #color3 {
   height: 6px;
   float: left;
 }
-/* line 102, ../sass/common.scss */
+/* line 104, ../sass/common.scss */
 header #top_bar #color1 {
   width: 45%;
   background-color: #00c376;
 }
-/* line 106, ../sass/common.scss */
+/* line 108, ../sass/common.scss */
 header #top_bar #color2 {
   width: 35%;
   background-color: #00aed9;
 }
-/* line 110, ../sass/common.scss */
+/* line 112, ../sass/common.scss */
 header #top_bar #color3 {
   width: 20%;
   background-color: #e62799;
 }
-/* line 116, ../sass/common.scss */
+/* line 118, ../sass/common.scss */
 header #title_bar {
   height: 75px;
   position: relative;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 120, ../sass/common.scss */
+/* line 122, ../sass/common.scss */
 header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 124, ../sass/common.scss */
+/* line 126, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
-  width: 350px;
+  width: 360px;
   font-size: 2em;
   font-weight: 700;
   cursor: pointer;
 }
-/* line 130, ../sass/common.scss */
+/* line 132, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
   margin-left: 1%;
   cursor: pointer;
 }
-/* line 136, ../sass/common.scss */
+/* line 138, ../sass/common.scss */
 header #title_bar #logo .subpage {
   font-size: 1em;
   font-weight: 700;
   color: #cccccc;
 }
 @media screen and (max-width: 400px) {
-  /* line 124, ../sass/common.scss */
+  /* line 126, ../sass/common.scss */
   header #title_bar #logo {
     width: 300px;
     font-size: 1.5em;
   }
 }
-/* line 146, ../sass/common.scss */
+/* line 148, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 151, ../sass/common.scss */
+/* line 153, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
 }
-/* line 155, ../sass/common.scss */
+/* line 157, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 158, ../sass/common.scss */
+/* line 160, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 161, ../sass/common.scss */
+/* line 163, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 116, ../sass/common.scss */
+  /* line 118, ../sass/common.scss */
   header #title_bar {
     height: 125px;
   }
-  /* line 168, ../sass/common.scss */
+  /* line 170, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
     position: absolute;
     left: inherit;
@@ -494,49 +496,49 @@ header #title_bar #menu a:nth-child(3):hover {
     text-align: center;
     /*left: 50%;*/
   }
-  /* line 175, ../sass/common.scss */
+  /* line 177, ../sass/common.scss */
   header #title_bar #logo {
     top: 21px;
   }
-  /* line 178, ../sass/common.scss */
+  /* line 180, ../sass/common.scss */
   header #title_bar #menu {
     top: 85px;
   }
-  /* line 181, ../sass/common.scss */
+  /* line 183, ../sass/common.scss */
   header #title_bar .absolut-center {
     position: relative;
     /*left: -50%;*/
   }
 }
 
-/* line 190, ../sass/common.scss */
+/* line 192, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 220px;
 }
-/* line 195, ../sass/common.scss */
+/* line 197, ../sass/common.scss */
 footer #footer_content {
   width: 200px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 200, ../sass/common.scss */
+/* line 202, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 206, ../sass/common.scss */
+/* line 208, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 211, ../sass/common.scss */
+/* line 213, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;
@@ -857,46 +859,82 @@ footer #footer_content #rights {
   #image_bar_company #responsibility_list .responsibility {
     width: 300px;
     text-align: center;
+    margin-bottom: 23px;
   }
 }
-/* line 37, ../sass/company.scss */
+/* line 38, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility h1 {
   font-size: 3em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
-/* line 40, ../sass/company.scss */
+/* line 42, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility ul {
   font-size: 1.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   color: #e6e6e6;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 47, ../sass/company.scss */
+/* line 50, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility a {
   float: left;
-  margin: 50px 54px 0 0;
+  margin: 50px 20px 0 0;
 }
-@media screen and (max-width: 700px) {
-  /* line 47, ../sass/company.scss */
+@media screen and (max-width: 1128px) {
+  /* line 50, ../sass/company.scss */
   #image_bar_company #responsibility_list .responsibility a {
     float: none;
-    margin: 54px;
+    margin: 4px 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 50, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility a {
+    float: none;
+    margin: 0px auto;
+  }
+}
+/* line 62, ../sass/company.scss */
+#image_bar_company #responsibility_list .responsibility span {
+  float: left;
+  margin: 50px 20px 0 0;
+  font-size: 1.5em;
+  color: #e6e6e6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  height: 50px;
+  line-height: 50px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 1128px) {
+  /* line 62, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility span {
+    float: none;
+    margin: 0px 72px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 62, ../sass/company.scss */
+  #image_bar_company #responsibility_list .responsibility span {
+    float: none;
+    margin: 5px;
   }
 }
 
-/* line 59, ../sass/company.scss */
+/* line 85, ../sass/company.scss */
 #people_content {
   text-align: center;
 }
-/* line 61, ../sass/company.scss */
+/* line 87, ../sass/company.scss */
 #people_content .quotation {
   font-style: italic;
 }
-/* line 64, ../sass/company.scss */
+/* line 90, ../sass/company.scss */
 #people_content p {
   color: #666666;
 }
-/* line 67, ../sass/company.scss */
+/* line 93, ../sass/company.scss */
 #people_content #logos {
   display: block;
   height: 90px;
@@ -904,31 +942,31 @@ footer #footer_content #rights {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 74, ../sass/company.scss */
+/* line 100, ../sass/company.scss */
 #people_content .software {
   color: #00c376;
 }
 
-/* line 79, ../sass/company.scss */
+/* line 105, ../sass/company.scss */
 #people_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 79, ../sass/company.scss */
+  /* line 105, ../sass/company.scss */
   #people_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 79, ../sass/company.scss */
+  /* line 105, ../sass/company.scss */
   #people_container {
     width: 300px;
   }
 }
 
-/* line 91, ../sass/company.scss */
+/* line 117, ../sass/company.scss */
 .person {
   width: 300px;
   float: left;
@@ -936,80 +974,84 @@ footer #footer_content #rights {
   position: relative;
   height: 300px;
 }
-/* line 97, ../sass/company.scss */
-.person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5), .person:nth-child(7), .person:nth-child(8) {
+/* line 123, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 100, ../sass/company.scss */
-.person:nth-child(1), .person:nth-child(2), .person:nth-child(3), .person:nth-child(4), .person:nth-child(5), .person:nth-child(6) {
+/* line 126, ../sass/company.scss */
+.person:nth-child(1), .person:nth-child(2), .person:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 91, ../sass/company.scss */
+  /* line 117, ../sass/company.scss */
   .person {
     width: 300px;
   }
-  /* line 105, ../sass/company.scss */
-  .person:nth-child(2), .person:nth-child(4), .person:nth-child(8) {
+  /* line 131, ../sass/company.scss */
+  .person:nth-child(2), .person:nth-child(4) {
     border-right: none;
   }
-  /* line 108, ../sass/company.scss */
-  .person:nth-child(3), .person:nth-child(9) {
+  /* line 134, ../sass/company.scss */
+  .person:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 111, ../sass/company.scss */
-  .person:nth-child(4), .person:nth-child(7), .person:nth-child(8) {
+  /* line 137, ../sass/company.scss */
+  .person:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 116, ../sass/company.scss */
+  /* line 142, ../sass/company.scss */
   .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
     border-right: none;
   }
+  /* line 145, ../sass/company.scss */
+  .person:nth-child(5) {
+    border-bottom: 1px solid #cccccc;
+  }
 }
-/* line 120, ../sass/company.scss */
+/* line 149, ../sass/company.scss */
 .person span {
   height: 300px;
   width: 300px;
   display: inline-block;
 }
-/* line 126, ../sass/company.scss */
+/* line 155, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 0px;
-  width: 120px;
+  width: 135px;
 }
-/* line 131, ../sass/company.scss */
+/* line 160, ../sass/company.scss */
 .person .name-and-place h2 {
   color: #666666;
 }
-/* line 134, ../sass/company.scss */
+/* line 163, ../sass/company.scss */
 .person .name-and-place a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 141, ../sass/company.scss */
+/* line 170, ../sass/company.scss */
 .person #join-us {
   margin-top: 120px;
   font-size: 2em;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 145, ../sass/company.scss */
+/* line 174, ../sass/company.scss */
 .person #join-us span {
   height: inherit;
   display: inline;
   color: #00c376;
   font-weight: bold;
 }
-/* line 150, ../sass/company.scss */
+/* line 179, ../sass/company.scss */
 .person #join-us span #us {
   color: #333333;
 }
-/* line 154, ../sass/company.scss */
+/* line 183, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
 }

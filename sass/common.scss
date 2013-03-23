@@ -86,9 +86,11 @@ textarea, input {
 	text-decoration: none;
 	text-align: center;
 	margin: auto;
+	font-family: $fontFamilyLogo;
+	font-weight: 400;
 	&:hover {
 		background-color: $baseGreen;
-		color: $hoverGrey;	
+		color: $baseGrey;	
 	}
 }
 
@@ -123,7 +125,7 @@ header {
   		}
 		#logo{
 			left: 0;
-			width: 350px;
+			width: 360px;
 			font-size:2em;
 			font-weight: 700;
 			cursor: pointer; 		
