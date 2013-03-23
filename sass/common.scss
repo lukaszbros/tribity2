@@ -20,6 +20,7 @@ body{
 
 a {
   color: $baseGreen;
+  font-style: italic;
   &:hover {
     color: $basePink;
    }
@@ -88,6 +89,7 @@ textarea, input {
 	margin: auto;
 	font-family: $fontFamilyLogo;
 	font-weight: 400;
+	font-style: normal;
 	&:hover {
 		background-color: $baseGreen;
 		color: $baseGrey;	
@@ -154,6 +156,7 @@ header {
 				margin-left: 10%;
 				color: $baseDark;
 				text-decoration: none;
+				font-style: normal;
 				&:nth-child(1):hover {
 					color: $basePink
 				}

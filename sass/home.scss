@@ -44,7 +44,7 @@
   		.work_type {
   			width: 33%;	
   			float: left;
-  			text-align: center;
+  			text-align: center;  			
   			span {
   				height: 95px;
   				width: 195px;
@@ -56,6 +56,7 @@
   				color: $opacityGrey;
   				margin: 0.1em 0;
   				font-weight:normal;
+  				font-family: $fontFamilyBase;
   			}
   			p {
   				font-size: 1em;
@@ -63,11 +64,15 @@
   			}
   		}
   		@media screen and (max-width: $breakBase) {
-  			width: 700px;
+  			width: 600px;
   			margin: auto;
   			.work_type {
   				width: 300px;
-  			}	
+  				&:nth-child(3) {
+  					float: none;
+  					margin: auto;
+  				}
+  			}
   		}
   		@media screen and (max-width: $breakBaseWork) {
   			width: 300px;

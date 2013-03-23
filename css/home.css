@@ -77,8 +77,9 @@
   color: #dddddd;
   margin: 0.1em 0;
   font-weight: normal;
+  font-family: "chaparral-pro", sans-serif;
 }
-/* line 60, ../sass/home.scss */
+/* line 61, ../sass/home.scss */
 #image_bar #work_list .work_type p {
   font-size: 1em;
   color: #aaaaaa;
@@ -86,12 +87,17 @@
 @media screen and (max-width: 1128px) {
   /* line 40, ../sass/home.scss */
   #image_bar #work_list {
-    width: 700px;
+    width: 600px;
     margin: auto;
   }
-  /* line 68, ../sass/home.scss */
+  /* line 69, ../sass/home.scss */
   #image_bar #work_list .work_type {
     width: 300px;
+  }
+  /* line 71, ../sass/home.scss */
+  #image_bar #work_list .work_type:nth-child(3) {
+    float: none;
+    margin: auto;
   }
 }
 @media screen and (max-width: 700px) {
@@ -101,7 +107,7 @@
   }
 }
 
-/* line 78, ../sass/home.scss */
+/* line 83, ../sass/home.scss */
 #content {
   width: 100%;
   color: #666666;
