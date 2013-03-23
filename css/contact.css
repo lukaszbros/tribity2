@@ -10,58 +10,65 @@
 #contact #contact_form_container {
   text-align: left;
 }
-/* line 10, ../sass/contact.scss */
+@media screen and (max-width: 1000px) {
+  /* line 8, ../sass/contact.scss */
+  #contact #contact_form_container {
+    width: 500px;
+    margin: auto;
+  }
+}
+/* line 14, ../sass/contact.scss */
 #contact #contact_form_container ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: block;
-  width: 50%;
+  width: 500px;
   float: left;
   color: #666666;
 }
 @media screen and (max-width: 1000px) {
-  /* line 10, ../sass/contact.scss */
+  /* line 14, ../sass/contact.scss */
   #contact #contact_form_container ul {
     width: 500px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 10, ../sass/contact.scss */
+  /* line 14, ../sass/contact.scss */
   #contact #contact_form_container ul {
-    width: 100%;
+    width: 300px;
   }
 }
-/* line 24, ../sass/contact.scss */
+/* line 28, ../sass/contact.scss */
 #contact #contact_form_container ul li {
   width: 100%;
   cursor: pointer;
 }
 @media screen and (max-width: 500px) {
-  /* line 24, ../sass/contact.scss */
+  /* line 28, ../sass/contact.scss */
   #contact #contact_form_container ul li {
     width: 300px;
     text-align: center;
   }
 }
-/* line 31, ../sass/contact.scss */
+/* line 35, ../sass/contact.scss */
 #contact #contact_form_container ul li:hover {
   color: #00c376;
 }
-/* line 34, ../sass/contact.scss */
+/* line 38, ../sass/contact.scss */
 #contact #contact_form_container ul li .icon {
   width: 200px;
   height: 100px;
   float: left;
 }
 @media screen and (max-width: 500px) {
-  /* line 34, ../sass/contact.scss */
+  /* line 38, ../sass/contact.scss */
   #contact #contact_form_container ul li .icon {
     float: inherit;
     margin: auto;
   }
 }
-/* line 43, ../sass/contact.scss */
+/* line 47, ../sass/contact.scss */
 #contact #contact_form_container ul li span {
   width: 300px;
   line-height: 100px;
@@ -69,77 +76,90 @@
   float: left;
 }
 @media screen and (max-width: 500px) {
-  /* line 43, ../sass/contact.scss */
+  /* line 47, ../sass/contact.scss */
   #contact #contact_form_container ul li span {
     line-height: inherit;
     margin-bottom: 20px;
   }
 }
-/* line 55, ../sass/contact.scss */
+/* line 59, ../sass/contact.scss */
 #contact #contact_form_container #contact_form {
-  width: 50%;
+  width: 480px;
   float: right;
 }
 @media screen and (max-width: 1000px) {
-  /* line 55, ../sass/contact.scss */
+  /* line 59, ../sass/contact.scss */
   #contact #contact_form_container #contact_form {
     float: left;
-    width: 500px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 55, ../sass/contact.scss */
+  /* line 59, ../sass/contact.scss */
   #contact #contact_form_container #contact_form {
     float: left;
     width: 300px;
   }
 }
-/* line 66, ../sass/contact.scss */
+/* line 69, ../sass/contact.scss */
+#contact #contact_form_container #contact_form input[type='text'] {
+  width: 210px;
+  padding-left: 10px;
+}
+/* line 72, ../sass/contact.scss */
+#contact #contact_form_container #contact_form input[type='text']:first-child {
+  float: left;
+}
+@media screen and (max-width: 500px) {
+  /* line 72, ../sass/contact.scss */
+  #contact #contact_form_container #contact_form input[type='text']:first-child {
+    float: right;
+  }
+}
+/* line 80, ../sass/contact.scss */
+#contact #contact_form_container #contact_form input[type='email'] {
+  width: 470px;
+  padding-left: 10px;
+}
+/* line 84, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text'], #contact #contact_form_container #contact_form input[type='email'] {
   height: 40px;
   float: right;
   margin: 10px 0;
   font-size: 1.5em;
 }
-/* line 72, ../sass/contact.scss */
-#contact #contact_form_container #contact_form input[type='text'] {
-  width: 47%;
-  padding-left: 2%;
-}
-/* line 75, ../sass/contact.scss */
-#contact #contact_form_container #contact_form input[type='text']:first-child {
-  float: left;
-}
 @media screen and (max-width: 500px) {
-  /* line 72, ../sass/contact.scss */
-  #contact #contact_form_container #contact_form input[type='text'] {
-    width: 98%;
+  /* line 84, ../sass/contact.scss */
+  #contact #contact_form_container #contact_form input[type='text'], #contact #contact_form_container #contact_form input[type='email'] {
+    width: 90%;
+    float: right;
   }
 }
-/* line 83, ../sass/contact.scss */
-#contact #contact_form_container #contact_form input[type='email'] {
-  width: 98%;
-  padding-left: 2%;
-}
-/* line 87, ../sass/contact.scss */
+/* line 95, ../sass/contact.scss */
 #contact #contact_form_container #contact_form textarea {
   resize: none;
-  width: 97.8%;
+  width: 469px;
   height: 200px;
   overflow: auto;
   float: right;
   margin: 10px 0;
   font-size: 1.5em;
-  padding-left: 2%;
+  padding-left: 10px;
 }
-/* line 97, ../sass/contact.scss */
+@media screen and (max-width: 500px) {
+  /* line 95, ../sass/contact.scss */
+  #contact #contact_form_container #contact_form textarea {
+    width: 90%;
+    float: right;
+  }
+}
+/* line 110, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='submit'] {
   float: right;
   border: 0;
   margin: 10px 0;
 }
 
-/* line 106, ../sass/contact.scss */
+/* line 119, ../sass/contact.scss */
 .selected-purpose {
   color: #00c376;
 }

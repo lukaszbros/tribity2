@@ -7,19 +7,23 @@
 	}
 	#contact_form_container{
 		text-align: left;
+		@media screen and (max-width: $breakContact) {
+			width: 500px;
+			margin: auto;
+		}
 		ul {
 			list-style-type: none;
 			padding:0; 
 			margin:0;
 			display:block;
-			width: 50%;
+			width: 500px;
 			float:left;
 			color:$darkGrey;
 			@media screen and (max-width: $breakContact) {
 				width:500px;
 			}
 			@media screen and (max-width: $breakContactForm) {
-				width:100%;
+				width:300px;
 			}
 			li {
 				width:100%;
@@ -53,46 +57,55 @@
 			}
 		}	
 		#contact_form {
-			width: 50%;
+			width: 480px;
 			float:right;
 			@media screen and (max-width: $breakContact) {
 				float:left;
-				width:500px;
 			}
 			@media screen and (max-width: $breakContactForm) {
 				float:left;
 				width:300px;
 			}
+			input[type='text'] {
+				width:210px;
+				padding-left: 10px;
+				&:first-child{
+					float: left;
+					@media screen and (max-width: $breakContactForm) 
+					{
+						float: right;
+					}
+				}
+			}
+			input[type='email'] {
+				width: 470px;
+				padding-left: 10px;
+			}
 			input[type='text'], input[type='email']{
 				height:40px;
 				float: right;
 				margin: 10px 0;
-				font-size: 1.5em;				
-			}
-			input[type='text'] {
-				width:47%;
-				padding-left: 2%;
-				&:first-child{
-					float: left;
-				}
+				font-size: 1.5em;
 				@media screen and (max-width: $breakContactForm) 
 				{
-					width:98%;
-				}
-			}
-			input[type='email'] {
-				width: 98%;
-				padding-left: 2%;
+					width:90%;
+					float: right;
+				}			
 			}
 			textarea {
 				resize: none;
-				width: 97.8%;
+				width: 469px;
 				height: 200px; 
 				overflow: auto;
 				float: right;
 				margin: 10px 0;
 				font-size: 1.5em;
-				padding-left: 2%;
+				padding-left: 10px;
+				@media screen and (max-width: $breakContactForm) 
+				{
+					width:90%;
+					float: right;
+				}
 			}
 			input[type='submit'] {
 				float: right;
