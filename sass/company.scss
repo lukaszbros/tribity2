@@ -37,11 +37,11 @@
 			}
 			h1{
 				font-size: 3em;				
-				@include single-text-shadow(rgba(0, 0, 0, 0.6), 1px, 1px, 3px);
+				@include single-text-shadow(rgba(0, 0, 0, 0.9), 1px, 1px, 3px);
 			}
 			ul {
 				font-size: 1.5em;
-				@include single-text-shadow(rgba(0, 0, 0, 0.6), 1px, 1px, 3px);
+				@include single-text-shadow(rgba(0, 0, 0, 0.9), 1px, 1px, 3px);
 				color: $topBarGrey;
 				list-style-type: none;
 				padding:0; 

@@ -55,12 +55,12 @@
 /* line 38, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility h1 {
   font-size: 3em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 /* line 42, ../sass/company.scss */
 #image_bar_company #responsibility_list .responsibility ul {
   font-size: 1.5em;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
   color: #e6e6e6;
   list-style-type: none;
   padding: 0;
