@@ -12,7 +12,7 @@
         return c.replace(/_hover/g, '');
       });
     });
-    return $('body').on('click', '.purpose', function() {
+    $('body').on('click', '.purpose', function() {
       $('.purpose').removeClass('selected-purpose');
       $('.icon').attr('class', function(i, c) {
         return c.replace(/_hover/g, '');
@@ -23,6 +23,16 @@
       });
       console.log($(this).attr('id'));
       return $('#purpose').val($(this).attr('id'));
+    });
+    return $('body').on('submit', '#contact_form_form', function(event) {
+      event.preventDefault();
+      return $.post('mailing.php', $(this).serialize(), function(data) {
+        if (data === 'success') {
+          return alert('Thank you for sending your project information. We will contact you back as soon as possible.');
+        } else {
+          return alert('There was a problem with sending your project information. You can contact us direct on office@tribity.com');
+        }
+      });
     });
   });
 

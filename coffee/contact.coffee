@@ -19,3 +19,12 @@ $(document).ready ->
     console.log $(@).attr('id')
     $('#purpose').val($(@).attr('id'))
   
+  #submit form
+  $('body').on 'submit', '#contact_form_form', (event) ->
+    event.preventDefault()
+    $.post 'mailing.php', $(@).serialize(), (data) ->
+      if (data == 'success')
+        alert('Thank you for sending your project information. We will contact you back as soon as possible.');
+      else
+        alert('There was a problem with sending your project information. You can contact us direct on office@tribity.com');
+  
