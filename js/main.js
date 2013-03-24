@@ -27,34 +27,91 @@
   });
 
   $(document).ready(function() {
-    var loadContent, selectLogo;
-    $('#main_content').load('work-opony360.html', function() {
-      return $(this).fadeIn('fast');
-    });
-    selectLogo = function(address) {
+    var cl, forward, getParameterByName, highlightMenu, loadContent, runHistory;
+    cl = new CanvasLoader('canvasloader-container');
+    cl.setColor('#dddddd');
+    cl.setShape('spiral');
+    cl.setDiameter(121);
+    cl.setDensity(21);
+    cl.setSpeed(1);
+    getParameterByName = function(name) {
+      var regex, regexS, results;
+      name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+      regexS = "[\\?&]" + name + "=([^&#]*)";
+      regex = new RegExp(regexS);
+      results = regex.exec(window.location.search);
+      if (results === null) {
+        return "";
+      } else {
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+    };
+    runHistory = function(window) {
+      var history;
+      history = window.History;
+      if (!history.enabled) {
+        return false;
+      }
+      return history.Adapter.bind(window, 'statechange', function() {
+        var forward, state;
+        state = History.getState();
+        forward = getParameterByName('forward');
+        if (forward && forward !== "") {
+          History.pushState(null, null, forward);
+          return;
+        }
+        return $('#main_content').load(state.url, function() {
+          cl.hide();
+          $(this).fadeIn('fast');
+          highlightMenu(state.url);
+          return $('footer').fadeIn('fast');
+        });
+      });
+    };
+    runHistory(window);
+    forward = getParameterByName('forward');
+    if (forward && forward !== "") {
+      History.pushState(null, null, forward);
+    } else {
+      History.pushState(null, null, 'home.html');
+    }
+    highlightMenu = function(address) {
+      var urlArray;
+      $('#menu a').removeAttr('style');
+      urlArray = address.split("/");
+      address = urlArray[urlArray.length - 1];
       switch (address) {
         case 'home.html':
-          return $('#logo .absolut-center').html('Tribity <span class="ux">UX</span> <span class="design">Design</span> <span class="software">Software</span>');
+          break;
         case 'work.html':
-          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s work</span>');
-        case 'contact.html':
-          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s contact</span>');
+          return $('#menu a#work').stop().animate({
+            color: "#e62799"
+          });
         case 'company.html':
-          return $('#logo .absolut-center').html('Tribity<span class="subpage">\'s company</span>');
+          return $('#menu a#company').stop().animate({
+            color: "#00aed9"
+          });
+        case 'contact.html':
+          return $('#menu a#contact').stop().animate({
+            color: "#00c376"
+          });
+        default:
+          return $('#menu a#work').stop().animate({
+            color: "#e62799"
+          });
       }
     };
     loadContent = function(address) {
-      $('footer').fadeOut('fast');
-      $('#logo .absolut-center').hide("slide", {
-        direction: "up"
-      }, 'fast');
+      var state, urlArray;
+      state = History.getState();
+      urlArray = state.url.split("/");
+      if (urlArray[urlArray.length - 1] === address) {
+        return;
+      }
+      $('footer').fadeOut('fast', function() {});
       return $('#main_content').fadeOut('fast', function() {
-        return $(this).load(address, function() {
-          $(this).fadeIn('fast');
-          selectLogo(address);
-          $('#logo .absolut-center').slideDown();
-          return $('footer').fadeIn('fast');
-        });
+        cl.show();
+        return History.pushState(null, null, address);
       });
     };
     $('#logo').click(function() {
