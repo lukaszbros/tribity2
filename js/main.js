@@ -2,6 +2,7 @@
 (function() {
 
   $(document).ready(function() {
+    var showDialog;
     $('body').on('mouseenter ', '.purpose:not(.selected-purpose)', function() {
       return $(this).find('.icon').attr('class', function(i, c) {
         return c.replace(/_icon/, '_icon_hover');
@@ -24,13 +25,20 @@
       console.log($(this).attr('id'));
       return $('#purpose').val($(this).attr('id'));
     });
+    showDialog = function(message) {
+      $("#contact_message").fadeOut('fast', function() {
+        $(this).html(message);
+        return $(this).fadeIn('fast');
+      });
+      return $('#contact_form_container').fadeOut('fast');
+    };
     return $('body').on('submit', '#contact_form_form', function(event) {
       event.preventDefault();
       return $.post('mailing.php', $(this).serialize(), function(data) {
         if (data === 'success') {
-          return alert('Thank you for sending your project information. We will contact you back as soon as possible.');
+          return showDialog('Thank You! Your Conversation has Begun.<h2>Your message was sent successfully. We will be in touch with you shortly.</h2>');
         } else {
-          return alert('There was a problem with sending your project information. You can contact us directly on office@tribity.com');
+          return showDialog('Sorry, there was a problem sending your message, please email us at <a href="mailto:office@tribity.com">office@tribity.com</a>');
         }
       });
     });

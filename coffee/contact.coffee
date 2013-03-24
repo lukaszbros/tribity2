@@ -19,12 +19,21 @@ $(document).ready ->
     console.log $(@).attr('id')
     $('#purpose').val($(@).attr('id'))
   
+  #show dialog function
+  showDialog = (message) ->
+    $("#contact_message").fadeOut 'fast', ->
+      $(@).html(message)
+      $(@).fadeIn 'fast'      
+    $('#contact_form_container').fadeOut 'fast'
+
   #submit form
   $('body').on 'submit', '#contact_form_form', (event) ->
     event.preventDefault()
-    $.post 'mailing.php', $(@).serialize(), (data) ->
+    $.post 'mailing.php', $(@).serialize(), (data) ->    
       if (data == 'success')
-        alert('Thank you for sending your project information. We will contact you back as soon as possible.');
+        showDialog('Thank You! Your Conversation has Begun.<h2>Your message was sent successfully. We will be in touch with you shortly.</h2>');
       else
-        alert('There was a problem with sending your project information. You can contact us directly on office@tribity.com');
+        showDialog('Sorry, there was a problem sending your message, please email us at <a href="mailto:office@tribity.com">office@tribity.com</a>');
+        
+  
   
