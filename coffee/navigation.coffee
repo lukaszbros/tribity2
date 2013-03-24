@@ -1,7 +1,7 @@
 $(document).ready ->
   
   #Home page load
-  $('#main_content').load 'work-racinglife.html', ->
+  $('#main_content').load 'work-opony360.html', ->
     $(@).fadeIn('fast')
     
   #Select logo text depending on shown address
