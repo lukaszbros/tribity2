@@ -30,7 +30,7 @@
         if (data === 'success') {
           return alert('Thank you for sending your project information. We will contact you back as soon as possible.');
         } else {
-          return alert('There was a problem with sending your project information. You can contact us direct on office@tribity.com');
+          return alert('There was a problem with sending your project information. You can contact us directly on office@tribity.com');
         }
       });
     });

@@ -25,9 +25,11 @@
 	}
 	div {
 		font-size: 1.5em;
-		width:50%;
+		width:48%;
 		text-align:left;
 		color: $darkGrey;
+		padding-left: 1%;
+		padding-right: 1%;
 		@media screen and (max-width: $breakBaseWork) {
 			width: 100%;
 			text-align:center;		
