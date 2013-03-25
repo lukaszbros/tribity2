@@ -16,3 +16,4 @@ cp *.png release
 cp *.html release
 cp *.ico release
 cp *.php release
+sed -i s/\'UA-XXXXX-X\'/\'UA-38521837-1\'/g ./release/index.html

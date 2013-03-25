@@ -25,10 +25,13 @@ $(document).ready ->
       if (forward && forward != "")
         History.pushState(null, null, forward)
         return;  
-      $('#main_content').load state.url, ->
+      $('#main_content').load state.url, ->        
         cl.hide()
-        $(@).fadeIn('fast')        
-        highlightMenu(state.url);
+        $(@).fadeIn('fast')      
+        urlArray = state.url.split("/")
+        address = urlArray[urlArray.length-1]
+        _gaq.push(['_trackPageview', address]);     
+        highlightMenu(address);
         $('footer').fadeIn 'fast'
       
   runHistory(window)
@@ -51,8 +54,6 @@ $(document).ready ->
         
   highlightMenu = (address) ->
     $('#menu a').removeAttr('style');
-    urlArray = address.split("/")
-    address = urlArray[urlArray.length-1]
     switch address
       when 'home.html' then 
       when 'work.html' then $('#menu a#work').stop().animate({color: "#e62799"})

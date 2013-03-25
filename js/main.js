@@ -79,9 +79,13 @@
           return;
         }
         return $('#main_content').load(state.url, function() {
+          var address, urlArray;
           cl.hide();
           $(this).fadeIn('fast');
-          highlightMenu(state.url);
+          urlArray = state.url.split("/");
+          address = urlArray[urlArray.length - 1];
+          _gaq.push(['_trackPageview', address]);
+          highlightMenu(address);
           return $('footer').fadeIn('fast');
         });
       });
@@ -94,10 +98,7 @@
       History.pushState(null, null, 'home.html');
     }
     highlightMenu = function(address) {
-      var urlArray;
       $('#menu a').removeAttr('style');
-      urlArray = address.split("/");
-      address = urlArray[urlArray.length - 1];
       switch (address) {
         case 'home.html':
           break;
