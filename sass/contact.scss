@@ -53,6 +53,14 @@
 						line-height: inherit;
 						margin-bottom: 20px;
 					}
+					a {
+						color: $darkGrey;
+						font-style: normal;
+						text-decoration: none;
+						&:hover {
+							color: $baseGreen;
+						}
+					}
 				}
 			}
 		}	
