@@ -170,7 +170,24 @@ header #title_bar #logo, header #title_bar #menu {
   position: absolute;
   bottom: 10px;
 }
-/* line 128, ../sass/common.scss */
+@media screen and (max-width: 700px) {
+  /* line 120, ../sass/common.scss */
+  header #title_bar {
+    height: 125px;
+  }
+  /* line 130, ../sass/common.scss */
+  header #title_bar #logo, header #title_bar #menu {
+    width: 370px;
+    margin: auto;
+    position: relative;
+  }
+  /* line 135, ../sass/common.scss */
+  header #title_bar .absolut-center {
+    position: relative;
+    /*left: -50%;*/
+  }
+}
+/* line 141, ../sass/common.scss */
 header #title_bar #logo {
   left: 0;
   width: 360px;
@@ -178,81 +195,72 @@ header #title_bar #logo {
   font-weight: 700;
   cursor: pointer;
 }
-/* line 134, ../sass/common.scss */
+/* line 147, ../sass/common.scss */
 header #title_bar #logo span {
   font-weight: 300;
   font-size: 0.8em;
   margin-left: 1%;
   cursor: pointer;
 }
-/* line 140, ../sass/common.scss */
+/* line 153, ../sass/common.scss */
 header #title_bar #logo .subpage {
   font-size: 1em;
   font-weight: 700;
   color: #cccccc;
 }
-@media screen and (max-width: 400px) {
-  /* line 128, ../sass/common.scss */
+@media screen and (max-width: 700px) {
+  /* line 141, ../sass/common.scss */
   header #title_bar #logo {
-    width: 300px;
+    top: 21px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 141, ../sass/common.scss */
+  header #title_bar #logo {
+    width: 260px;
     font-size: 1.5em;
   }
 }
-/* line 150, ../sass/common.scss */
+/* line 166, ../sass/common.scss */
 header #title_bar #menu {
   right: 0;
   width: 270px;
   font-size: 1em;
   font-weight: 700;
 }
-/* line 155, ../sass/common.scss */
+/* line 171, ../sass/common.scss */
 header #title_bar #menu a {
   margin-left: 10%;
   color: black;
   text-decoration: none;
   font-style: normal;
 }
-/* line 160, ../sass/common.scss */
+/* line 176, ../sass/common.scss */
 header #title_bar #menu a:nth-child(1):hover {
   color: #e62799;
 }
-/* line 163, ../sass/common.scss */
+/* line 179, ../sass/common.scss */
 header #title_bar #menu a:nth-child(2):hover {
   color: #00aed9;
 }
-/* line 166, ../sass/common.scss */
+/* line 182, ../sass/common.scss */
 header #title_bar #menu a:nth-child(3):hover {
   color: #00c376;
 }
 @media screen and (max-width: 700px) {
-  /* line 120, ../sass/common.scss */
-  header #title_bar {
-    height: 125px;
-  }
-  /* line 173, ../sass/common.scss */
-  header #title_bar #logo, header #title_bar #menu {
-    position: absolute;
-    left: inherit;
-    right: inherit;
-    text-align: center;
-    /*left: 50%;*/
-  }
-  /* line 180, ../sass/common.scss */
-  header #title_bar #logo {
-    top: 21px;
-  }
-  /* line 183, ../sass/common.scss */
+  /* line 166, ../sass/common.scss */
   header #title_bar #menu {
-    top: 85px;
+    top: 60px;
   }
-  /* line 186, ../sass/common.scss */
-  header #title_bar .absolut-center {
-    position: relative;
-    /*left: -50%;*/
+}
+@media screen and (max-width: 400px) {
+  /* line 166, ../sass/common.scss */
+  header #title_bar #menu {
+    width: 290px;
   }
 }
 
-/* line 195, ../sass/common.scss */
+/* line 196, ../sass/common.scss */
 #canvasloader-container {
   position: relative;
   top: 50px;
@@ -260,34 +268,34 @@ header #title_bar #menu a:nth-child(3):hover {
   margin: auto;
 }
 
-/* line 202, ../sass/common.scss */
+/* line 203, ../sass/common.scss */
 footer {
   clear: both;
   height: 120px;
   width: 100%;
   padding-top: 220px;
 }
-/* line 207, ../sass/common.scss */
+/* line 208, ../sass/common.scss */
 footer #footer_content {
   width: 210px;
   margin: auto;
   text-align: center;
   color: #999999;
 }
-/* line 212, ../sass/common.scss */
+/* line 213, ../sass/common.scss */
 footer #footer_content a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 218, ../sass/common.scss */
+/* line 219, ../sass/common.scss */
 footer #footer_content p {
   font-size: 1.5em;
   -webkit-margin-before: 0.1em;
   -webkit-margin-after: 0.5em;
 }
-/* line 223, ../sass/common.scss */
+/* line 224, ../sass/common.scss */
 footer #footer_content #rights {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.85em;

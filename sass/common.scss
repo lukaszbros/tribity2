@@ -125,6 +125,19 @@ header {
 			position: absolute;
 			bottom: 10px;	
   		}
+  		@media screen and (max-width: $breakBaseMenu) {
+			height: 125px;
+  			#logo, #menu {
+  				width: 370px;
+				margin: auto;
+    			position: relative;
+  			}
+  			.absolut-center{
+  				position: relative;
+  				/*left: -50%;*/
+  			}
+			
+		}	
 		#logo{
 			left: 0;
 			width: 360px;
@@ -142,8 +155,11 @@ header {
 				font-weight: 700;
 				color: $hrColor;
 			}
+			@media screen and (max-width: $breakBaseMenu) {
+				top: 21px;	
+			}
 			@media screen and (max-width: $breakLogo) {
-    			width: 300px;
+    			width: 260px;
     			font-size: 1.5em;
   			}	
 		}
@@ -167,27 +183,12 @@ header {
 					color: $baseGreen
 				}				
 			}
-		}
-		@media screen and (max-width: $breakBaseMenu) {
-			height: 125px;
-  			#logo, #menu {
-  				position: absolute;
-  				left:inherit;
-  				right:inherit;
-  				text-align:center; 
-  				/*left: 50%;*/
+			@media screen and (max-width: $breakBaseMenu) {
+				top: 60px;	
+			}
+			@media screen and (max-width: $breakLogo) {
+    			width: 290px;
   			}
-  			#logo { 
-  				top: 21px;			
-  			}
-  			#menu {
-  				top: 85px;  			
-  			}
-  			.absolut-center{
-  				position: relative;
-  				/*left: -50%;*/
-  			}
-			
 		}
 	}	
 }
