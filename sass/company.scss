@@ -67,7 +67,6 @@
 				@include single-text-shadow(rgba(0, 0, 0, 0.6), 1px, 1px, 3px);
 				height: 50px;
 				line-height: 50px;	
-				font-family: $fontFamilyLogo;
 				font-weight: 400;			
 				@media screen and (max-width: $breakBase) {
 					float: none;
