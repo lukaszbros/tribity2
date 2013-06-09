@@ -580,8 +580,8 @@ footer #footer_content #rights {
   height: 430px;
   width: 100%;
   background-color: #666666;
-  background-image: url('/tribity2/img/home/3.png?1362523201');
-  background-position: center top;
+  background-image: url('/tribity2/img/home/bg1.jpg?1370597754');
+  background-position: center -360px;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -849,8 +849,8 @@ footer #footer_content #rights {
   height: 430px;
   width: 100%;
   background-color: #666666;
-  background-image: url('/tribity2/img/home/2.png?1362523204');
-  background-position: center top;
+  background-image: url('/tribity2/img/home/bg2.jpg?1370597754');
+  background-position: center -160px;
   background-repeat: no-repeat;
   position: relative;
 }
