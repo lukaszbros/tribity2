@@ -245,39 +245,111 @@ textarea {
   background-position: 0 -1320px;
 }
 
-/* line 82, company/team/*.png */
-.team-sprite, .team-team-photo-generic, .team-team-photo1, .team-team-photo2, .team-team-photo3, .team-team-photo4, .team-team-photo5 {
-  background: url('/tribity2/img/company/team-s6638129a35.png') no-repeat;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.team-team-photo-generic {
-  background-position: 0 -1500px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+                       /*@import "company/team/*.png";
+@include all-team-sprites;*/
+/* line 108, ../sass/main.scss */
 .team-team-photo1 {
-  background-position: 0 -300px;
+  background-image: url('/tribity2/img/company/team-s99ae73721e.png');
+  background-position: 0 -310px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 108, ../sass/main.scss */
+  .team-team-photo1 {
+    background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
+    background-size: 300px 1520px;
+    background-position: 0 -305px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 112, ../sass/main.scss */
 .team-team-photo2 {
-  background-position: 0 -900px;
+  background-image: url('/tribity2/img/company/team-s99ae73721e.png');
+  background-position: 0 -930px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 112, ../sass/main.scss */
+  .team-team-photo2 {
+    background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
+    background-size: 300px 1520px;
+    background-position: 0 -915px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 116, ../sass/main.scss */
 .team-team-photo3 {
-  background-position: 0 -600px;
+  background-image: url('/tribity2/img/company/team-s99ae73721e.png');
+  background-position: 0 -620px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 116, ../sass/main.scss */
+  .team-team-photo3 {
+    background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
+    background-size: 300px 1520px;
+    background-position: 0 -610px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 120, ../sass/main.scss */
 .team-team-photo4 {
+  background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 120, ../sass/main.scss */
+  .team-team-photo4 {
+    background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
+    background-size: 300px 1520px;
+    background-position: 0 0;
+    height: 300px;
+    width: 300px;
+  }
 }
 
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 124, ../sass/main.scss */
 .team-team-photo5 {
-  background-position: 0 -1200px;
+  background-image: url('/tribity2/img/company/team-s99ae73721e.png');
+  background-position: 0 -1240px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 124, ../sass/main.scss */
+  .team-team-photo5 {
+    background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
+    background-size: 300px 1520px;
+    background-position: 0 -1220px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 /*
@@ -1054,7 +1126,7 @@ footer #footer_content #rights {
 /* line 154, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
-  top: 120px;
+  top: 140px;
   left: 0px;
   width: 135px;
 }
@@ -1278,7 +1350,7 @@ footer #footer_content #rights {
 /*
  * Image replacement
  */
-/* line 125, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1287,7 +1359,7 @@ footer #footer_content #rights {
   *text-indent: -9999px;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1298,7 +1370,7 @@ footer #footer_content #rights {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 144, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1307,7 +1379,7 @@ footer #footer_content #rights {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 153, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1323,7 +1395,7 @@ footer #footer_content #rights {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 170, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1337,7 +1409,7 @@ footer #footer_content #rights {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 183, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1353,7 +1425,7 @@ footer #footer_content #rights {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 200, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1362,7 +1434,7 @@ footer #footer_content #rights {
   /* 2 */
 }
 
-/* line 205, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1371,7 +1443,7 @@ footer #footer_content #rights {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 214, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1392,7 +1464,7 @@ footer #footer_content #rights {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 241, ../sass/main.scss */
+  /* line 264, ../sass/main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -1401,18 +1473,18 @@ footer #footer_content #rights {
     text-shadow: none !important;
   }
 
-  /* line 249, ../sass/main.scss */
+  /* line 272, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 253, ../sass/main.scss */
+  /* line 276, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 257, ../sass/main.scss */
+  /* line 280, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1420,33 +1492,33 @@ footer #footer_content #rights {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 267, ../sass/main.scss */
+  /* line 290, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 272, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 277, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 282, ../sass/main.scss */
+  /* line 305, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 286, ../sass/main.scss */
+  /* line 309, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1455,7 +1527,7 @@ footer #footer_content #rights {
     margin: 0.5cm;
 }
 
-  /* line 296, ../sass/main.scss */
+  /* line 319, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1463,7 +1535,7 @@ footer #footer_content #rights {
     widows: 3;
   }
 
-  /* line 302, ../sass/main.scss */
+  /* line 325, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

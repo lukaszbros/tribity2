@@ -27,13 +27,44 @@ $fontFamilyBase: "chaparral-pro",sans-serif;
 $fontFamilyLogo: "proxima-nova",sans-serif; 
 
 @mixin input-placeholder($color) {
-      &.placeholder {
-        color: $color; 
-        }
-      &:-moz-placeholder {
-        color: $color; 
-        }
-      &::-webkit-input-placeholder {
-        color: $color; 
-        } 
+	&.placeholder {
+	  color: $color; 
+	  }
+	&:-moz-placeholder {
+	  color: $color; 
+	  }
+	&::-webkit-input-placeholder {
+	  color: $color; 
+	  } 
+}
+
+@mixin image-div($imageAddress, $imageDirectory, $includeMobile:true) {
+	background-image: image-url($imageDirectory + "/" + $imageAddress);
+	@if $includeMobile {
+		background-image: -webkit-image-set(image_url($imageDirectory + "/" + $imageAddress) 1x, image_url($imageDirectory + "_mobile/" + $imageAddress) 2x);
+	}
+	max-width: image-width($imageDirectory + "/" + $imageAddress);
+	width: 100%;
+    height: image-height($imageDirectory + "/" + $imageAddress);
+    background-position:center top;
+	background-repeat:no-repeat; 
+	background-size: contain;	
+}
+
+@mixin use-sprite($sprite) {
+    background-image: sprite-url($icons);
+    background-position: sprite-position($icons, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: image-height(sprite-file($icons, $sprite));
+    width: image-width(sprite-file($icons, $sprite));
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+        background-image: sprite-url($icons-2x);
+        background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
+        background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2) round(nth(sprite-position($icons-2x, $sprite), 2) / 2);
+        height: image-height(sprite-file($icons-2x, $sprite)) / 2;
+        width: image-width(sprite-file($icons-2x, $sprite)) / 2;
     }
+}

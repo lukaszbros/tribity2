@@ -99,8 +99,31 @@ textarea {
 @include all-icons-sprites;
 @import "work/*.png";
 @include all-work-sprites;
-@import "company/team/*.png";
-@include all-team-sprites;
+/*@import "company/team/*.png";
+@include all-team-sprites;*/
+
+$icons: sprite-map("company/team/*.png", $spacing: 10px);
+$icons-2x: sprite-map("company/team_mobile/*.png", $spacing: 10px);
+
+.team-team-photo1 {
+	@include use-sprite("team-photo1");
+}
+
+.team-team-photo2 {
+	@include use-sprite("team-photo2");
+}
+
+.team-team-photo3 {
+	@include use-sprite("team-photo3");
+}
+
+.team-team-photo4 {
+	@include use-sprite("team-photo4");
+}
+
+.team-team-photo5 {
+	@include use-sprite("team-photo5");
+}
 
 @import "common";
 
