@@ -3,28 +3,6 @@
 
   $(document).ready(function() {
     var showDialog;
-    $('body').on('mouseenter ', '.purpose:not(.selected-purpose)', function() {
-      return $(this).find('.icon').attr('class', function(i, c) {
-        return c.replace(/_icon/, '_icon_hover');
-      });
-    });
-    $('body').on('mouseleave ', '.purpose:not(.selected-purpose)', function() {
-      return $(this).find('.icon').attr('class', function(i, c) {
-        return c.replace(/_hover/g, '');
-      });
-    });
-    $('body').on('click', '.purpose', function() {
-      $('.purpose').removeClass('selected-purpose');
-      $('.icon').attr('class', function(i, c) {
-        return c.replace(/_hover/g, '');
-      });
-      $(this).addClass('selected-purpose');
-      $(this).find('.icon').attr('class', function(i, c) {
-        return c.replace(/_icon/, '_icon_hover');
-      });
-      console.log($(this).attr('id'));
-      return $('#purpose').val($(this).attr('id'));
-    });
     showDialog = function(message) {
       $("#contact_message").fadeOut('fast', function() {
         $(this).html(message);

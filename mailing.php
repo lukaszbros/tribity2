@@ -11,7 +11,6 @@
 	$body.=" First name: ".htmlentities($_REQUEST['first_name'])."<br />";
 	$body.=" Last name: ".htmlentities($_REQUEST['last_name'])."<br />";
 	$body.=" Email: ".htmlentities($_REQUEST['email'])."<br />";
-	$body.=" Purpose: ".htmlentities($_REQUEST['purpose'])."<br />";
 	$body.=" Project description: ".htmlentities($_REQUEST['project_description'])."<br />";
 	if ($mailServerConnection->sendMail('office@tribity.com', 'Tribity page form', $body)) {
 		echo 'success';

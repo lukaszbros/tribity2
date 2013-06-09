@@ -1149,75 +1149,71 @@ footer #footer_content #rights {
   }
 }
 /* line 38, ../sass/contact.scss */
-#contact #contact_form_container ul li:hover {
-  color: #00c376;
-}
-/* line 41, ../sass/contact.scss */
 #contact #contact_form_container ul li .icon {
   width: 200px;
   height: 100px;
   float: left;
 }
 @media screen and (max-width: 500px) {
-  /* line 41, ../sass/contact.scss */
+  /* line 38, ../sass/contact.scss */
   #contact #contact_form_container ul li .icon {
     float: inherit;
     margin: auto;
   }
 }
-/* line 50, ../sass/contact.scss */
+/* line 47, ../sass/contact.scss */
 #contact #contact_form_container ul li span {
   width: 300px;
-  line-height: 100px;
   font-size: 2em;
   float: left;
+  margin-top: 28px;
 }
 @media screen and (max-width: 500px) {
-  /* line 50, ../sass/contact.scss */
+  /* line 47, ../sass/contact.scss */
   #contact #contact_form_container ul li span {
     line-height: inherit;
     margin-bottom: 20px;
   }
 }
-/* line 62, ../sass/contact.scss */
+/* line 59, ../sass/contact.scss */
 #contact #contact_form_container #contact_form {
   width: 480px;
   float: right;
 }
 @media screen and (max-width: 1000px) {
-  /* line 62, ../sass/contact.scss */
+  /* line 59, ../sass/contact.scss */
   #contact #contact_form_container #contact_form {
     float: left;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 62, ../sass/contact.scss */
+  /* line 59, ../sass/contact.scss */
   #contact #contact_form_container #contact_form {
     float: left;
     width: 300px;
   }
 }
-/* line 72, ../sass/contact.scss */
+/* line 69, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text'] {
   width: 210px;
   padding-left: 10px;
 }
-/* line 75, ../sass/contact.scss */
+/* line 72, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text']:first-child {
   float: left;
 }
 @media screen and (max-width: 500px) {
-  /* line 75, ../sass/contact.scss */
+  /* line 72, ../sass/contact.scss */
   #contact #contact_form_container #contact_form input[type='text']:first-child {
     float: right;
   }
 }
-/* line 83, ../sass/contact.scss */
+/* line 80, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='email'] {
   width: 470px;
   padding-left: 10px;
 }
-/* line 87, ../sass/contact.scss */
+/* line 84, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='text'], #contact #contact_form_container #contact_form input[type='email'] {
   height: 40px;
   float: right;
@@ -1225,13 +1221,13 @@ footer #footer_content #rights {
   font-size: 1.5em;
 }
 @media screen and (max-width: 500px) {
-  /* line 87, ../sass/contact.scss */
+  /* line 84, ../sass/contact.scss */
   #contact #contact_form_container #contact_form input[type='text'], #contact #contact_form_container #contact_form input[type='email'] {
     width: 90%;
     float: right;
   }
 }
-/* line 98, ../sass/contact.scss */
+/* line 95, ../sass/contact.scss */
 #contact #contact_form_container #contact_form textarea {
   resize: none;
   width: 469px;
@@ -1243,20 +1239,20 @@ footer #footer_content #rights {
   padding-left: 10px;
 }
 @media screen and (max-width: 500px) {
-  /* line 98, ../sass/contact.scss */
+  /* line 95, ../sass/contact.scss */
   #contact #contact_form_container #contact_form textarea {
     width: 90%;
     float: right;
   }
 }
-/* line 113, ../sass/contact.scss */
+/* line 110, ../sass/contact.scss */
 #contact #contact_form_container #contact_form input[type='submit'] {
   float: right;
   border: 0;
   margin: 10px 0;
 }
 
-/* line 122, ../sass/contact.scss */
+/* line 119, ../sass/contact.scss */
 .selected-purpose {
   color: #00c376;
 }
