@@ -126,36 +126,41 @@
 /* line 92, ../sass/company.scss */
 #people_content #logos {
   display: block;
-  height: 90px;
   background-image: url('/tribity2/img/company/tech-logo-set.png?1362872986');
-  background-position: center;
+  background-image: -webkit-image-set(url('/tribity2/img/company/tech-logo-set.png?1362872986') 1x, url('/tribity2/img/company/tech-logo-set@x2.png?1370816236') 2x);
+  max-width: 1128px;
+  width: 100%;
+  height: 140px;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 90px;
 }
-/* line 99, ../sass/company.scss */
+/* line 97, ../sass/company.scss */
 #people_content .software {
   color: #00c376;
 }
 
-/* line 104, ../sass/company.scss */
+/* line 102, ../sass/company.scss */
 #people_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 104, ../sass/company.scss */
+  /* line 102, ../sass/company.scss */
   #people_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 104, ../sass/company.scss */
+  /* line 102, ../sass/company.scss */
   #people_container {
     width: 300px;
   }
 }
 
-/* line 116, ../sass/company.scss */
+/* line 114, ../sass/company.scss */
 .person {
   width: 300px;
   float: left;
@@ -163,84 +168,84 @@
   position: relative;
   height: 300px;
 }
-/* line 122, ../sass/company.scss */
+/* line 120, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 125, ../sass/company.scss */
+/* line 123, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 116, ../sass/company.scss */
+  /* line 114, ../sass/company.scss */
   .person {
     width: 300px;
   }
-  /* line 130, ../sass/company.scss */
+  /* line 128, ../sass/company.scss */
   .person:nth-child(2), .person:nth-child(4) {
     border-right: none;
   }
-  /* line 133, ../sass/company.scss */
+  /* line 131, ../sass/company.scss */
   .person:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 136, ../sass/company.scss */
+  /* line 134, ../sass/company.scss */
   .person:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 141, ../sass/company.scss */
+  /* line 139, ../sass/company.scss */
   .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
     border-right: none;
   }
-  /* line 144, ../sass/company.scss */
+  /* line 142, ../sass/company.scss */
   .person:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 148, ../sass/company.scss */
+/* line 146, ../sass/company.scss */
 .person span {
   height: 300px;
   width: 300px;
   display: inline-block;
 }
-/* line 154, ../sass/company.scss */
+/* line 152, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
   top: 140px;
   left: 0px;
   width: 135px;
 }
-/* line 159, ../sass/company.scss */
+/* line 157, ../sass/company.scss */
 .person .name-and-place h2 {
   color: #666666;
 }
-/* line 162, ../sass/company.scss */
+/* line 160, ../sass/company.scss */
 .person .name-and-place a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 169, ../sass/company.scss */
+/* line 167, ../sass/company.scss */
 .person #join-us {
   margin-top: 120px;
   font-size: 2em;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 173, ../sass/company.scss */
+/* line 171, ../sass/company.scss */
 .person #join-us span {
   height: inherit;
   display: inline;
   color: #00c376;
   font-weight: bold;
 }
-/* line 178, ../sass/company.scss */
+/* line 176, ../sass/company.scss */
 .person #join-us span #us {
   color: #333333;
 }
-/* line 182, ../sass/company.scss */
+/* line 180, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
 }

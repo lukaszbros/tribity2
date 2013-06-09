@@ -91,10 +91,8 @@
 	}
 	#logos {
 		display: block;
+		@include image-div('company/tech-logo-set');		
 		height: 90px;
-		background-image: image-url('company/tech-logo-set.png');
-		background-position:center;
-		background-repeat:no-repeat;
 	}
 	.software {
 		color: $baseGreen;

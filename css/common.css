@@ -173,7 +173,7 @@ header #title_bar #logo, header #title_bar #menu {
 @media screen and (max-width: 700px) {
   /* line 120, ../sass/common.scss */
   header #title_bar {
-    height: 125px;
+    height: 160px;
   }
   /* line 130, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {

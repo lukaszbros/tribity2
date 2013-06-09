@@ -200,54 +200,95 @@ textarea {
   background-position: 0 -1352px;
 }
 
-/* line 98, work/*.png */
-.work-sprite, .work-work-tiles1, .work-work-tiles2, .work-work-tiles3, .work-work-tiles4, .work-work-tiles5, .work-work-tiles6, .work-work-tiles7, .work-work-tiles8 {
-  background: url('/tribity2/img/work-s100bf0654f.png') no-repeat;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles1 {
-  background-position: 0 0;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles2 {
-  background-position: 0 -1100px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles3 {
-  background-position: 0 -660px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles4 {
-  background-position: 0 -880px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles5 {
-  background-position: 0 -220px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles6 {
-  background-position: 0 -1540px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles7 {
-  background-position: 0 -440px;
-}
-
-/* line 60, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.work-work-tiles8 {
-  background-position: 0 -1320px;
-}
-
-                       /*@import "company/team/*.png";
+                     /*@import "work/*.png";
+@include all-work-sprites;
+@import "company/team/*.png";
 @include all-team-sprites;*/
 /* line 108, ../sass/main.scss */
+.work-work-tiles1 {
+  background-image: url('/tribity2/img/work-sd1f93aec63.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 220px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 108, ../sass/main.scss */
+  .work-work-tiles1 {
+    background-image: url('/tribity2/img/work_mobile-sd79ff80915.png');
+    background-size: 300px 895px;
+    background-position: 0 0;
+    height: 220px;
+    width: 300px;
+  }
+}
+
+/* line 112, ../sass/main.scss */
+.work-work-tiles2 {
+  background-image: url('/tribity2/img/work-sd1f93aec63.png');
+  background-position: 0 -1150px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 220px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 112, ../sass/main.scss */
+  .work-work-tiles2 {
+    background-image: url('/tribity2/img/work_mobile-sd79ff80915.png');
+    background-size: 300px 895px;
+    background-position: 0 -450px;
+    height: 220px;
+    width: 300px;
+  }
+}
+
+/* line 116, ../sass/main.scss */
+.work-work-tiles5 {
+  background-image: url('/tribity2/img/work-sd1f93aec63.png');
+  background-position: 0 -230px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 220px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 116, ../sass/main.scss */
+  .work-work-tiles5 {
+    background-image: url('/tribity2/img/work_mobile-sd79ff80915.png');
+    background-size: 300px 895px;
+    background-position: 0 -225px;
+    height: 220px;
+    width: 300px;
+  }
+}
+
+/* line 120, ../sass/main.scss */
+.work-work-tiles8 {
+  background-image: url('/tribity2/img/work-sd1f93aec63.png');
+  background-position: 0 -1380px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  height: 220px;
+  width: 300px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  /* line 120, ../sass/main.scss */
+  .work-work-tiles8 {
+    background-image: url('/tribity2/img/work_mobile-sd79ff80915.png');
+    background-size: 300px 895px;
+    background-position: 0 -675px;
+    height: 220px;
+    width: 300px;
+  }
+}
+
+/* line 127, ../sass/main.scss */
 .team-team-photo1 {
   background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 -310px;
@@ -258,7 +299,7 @@ textarea {
   width: 300px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
-  /* line 108, ../sass/main.scss */
+  /* line 127, ../sass/main.scss */
   .team-team-photo1 {
     background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
     background-size: 300px 1520px;
@@ -268,7 +309,7 @@ textarea {
   }
 }
 
-/* line 112, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .team-team-photo2 {
   background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 -930px;
@@ -279,7 +320,7 @@ textarea {
   width: 300px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
-  /* line 112, ../sass/main.scss */
+  /* line 131, ../sass/main.scss */
   .team-team-photo2 {
     background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
     background-size: 300px 1520px;
@@ -289,7 +330,7 @@ textarea {
   }
 }
 
-/* line 116, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .team-team-photo3 {
   background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 -620px;
@@ -300,7 +341,7 @@ textarea {
   width: 300px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
-  /* line 116, ../sass/main.scss */
+  /* line 135, ../sass/main.scss */
   .team-team-photo3 {
     background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
     background-size: 300px 1520px;
@@ -310,7 +351,7 @@ textarea {
   }
 }
 
-/* line 120, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .team-team-photo4 {
   background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 0;
@@ -321,7 +362,7 @@ textarea {
   width: 300px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
-  /* line 120, ../sass/main.scss */
+  /* line 139, ../sass/main.scss */
   .team-team-photo4 {
     background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
     background-size: 300px 1520px;
@@ -331,7 +372,7 @@ textarea {
   }
 }
 
-/* line 124, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .team-team-photo5 {
   background-image: url('/tribity2/img/company/team-s99ae73721e.png');
   background-position: 0 -1240px;
@@ -342,7 +383,7 @@ textarea {
   width: 300px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
-  /* line 124, ../sass/main.scss */
+  /* line 143, ../sass/main.scss */
   .team-team-photo5 {
     background-image: url('/tribity2/img/company/team_mobile-sd7e0842ed8.png');
     background-size: 300px 1520px;
@@ -527,7 +568,7 @@ header #title_bar #logo, header #title_bar #menu {
 @media screen and (max-width: 700px) {
   /* line 120, ../sass/common.scss */
   header #title_bar {
-    height: 125px;
+    height: 160px;
   }
   /* line 130, ../sass/common.scss */
   header #title_bar #logo, header #title_bar #menu {
@@ -1052,36 +1093,41 @@ footer #footer_content #rights {
 /* line 92, ../sass/company.scss */
 #people_content #logos {
   display: block;
-  height: 90px;
   background-image: url('/tribity2/img/company/tech-logo-set.png?1362872986');
-  background-position: center;
+  background-image: -webkit-image-set(url('/tribity2/img/company/tech-logo-set.png?1362872986') 1x, url('/tribity2/img/company/tech-logo-set@x2.png?1370816236') 2x);
+  max-width: 1128px;
+  width: 100%;
+  height: 140px;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 90px;
 }
-/* line 99, ../sass/company.scss */
+/* line 97, ../sass/company.scss */
 #people_content .software {
   color: #00c376;
 }
 
-/* line 104, ../sass/company.scss */
+/* line 102, ../sass/company.scss */
 #people_container {
   padding: 50px 0 50px 0;
   width: 902px;
   margin: auto;
 }
 @media screen and (max-width: 1128px) {
-  /* line 104, ../sass/company.scss */
+  /* line 102, ../sass/company.scss */
   #people_container {
     width: 601px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 104, ../sass/company.scss */
+  /* line 102, ../sass/company.scss */
   #people_container {
     width: 300px;
   }
 }
 
-/* line 116, ../sass/company.scss */
+/* line 114, ../sass/company.scss */
 .person {
   width: 300px;
   float: left;
@@ -1089,84 +1135,84 @@ footer #footer_content #rights {
   position: relative;
   height: 300px;
 }
-/* line 122, ../sass/company.scss */
+/* line 120, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(4), .person:nth-child(5) {
   border-right: 1px solid #cccccc;
 }
-/* line 125, ../sass/company.scss */
+/* line 123, ../sass/company.scss */
 .person:nth-child(1), .person:nth-child(2), .person:nth-child(3) {
   border-bottom: 1px solid #cccccc;
 }
 @media screen and (max-width: 1128px) {
-  /* line 116, ../sass/company.scss */
+  /* line 114, ../sass/company.scss */
   .person {
     width: 300px;
   }
-  /* line 130, ../sass/company.scss */
+  /* line 128, ../sass/company.scss */
   .person:nth-child(2), .person:nth-child(4) {
     border-right: none;
   }
-  /* line 133, ../sass/company.scss */
+  /* line 131, ../sass/company.scss */
   .person:nth-child(3) {
     border-right: 1px solid #cccccc;
   }
-  /* line 136, ../sass/company.scss */
+  /* line 134, ../sass/company.scss */
   .person:nth-child(4) {
     border-bottom: 1px solid #cccccc;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 141, ../sass/company.scss */
+  /* line 139, ../sass/company.scss */
   .person:nth-child(1), .person:nth-child(3), .person:nth-child(5), .person:nth-child(7), .person:nth-child(9) {
     border-right: none;
   }
-  /* line 144, ../sass/company.scss */
+  /* line 142, ../sass/company.scss */
   .person:nth-child(5) {
     border-bottom: 1px solid #cccccc;
   }
 }
-/* line 148, ../sass/company.scss */
+/* line 146, ../sass/company.scss */
 .person span {
   height: 300px;
   width: 300px;
   display: inline-block;
 }
-/* line 154, ../sass/company.scss */
+/* line 152, ../sass/company.scss */
 .person .name-and-place {
   position: absolute;
   top: 140px;
   left: 0px;
   width: 135px;
 }
-/* line 159, ../sass/company.scss */
+/* line 157, ../sass/company.scss */
 .person .name-and-place h2 {
   color: #666666;
 }
-/* line 162, ../sass/company.scss */
+/* line 160, ../sass/company.scss */
 .person .name-and-place a {
   height: 26px;
   width: 26px;
   display: inline-block;
   margin: 0 1px 0 1px;
 }
-/* line 169, ../sass/company.scss */
+/* line 167, ../sass/company.scss */
 .person #join-us {
   margin-top: 120px;
   font-size: 2em;
   font-family: "proxima-nova", sans-serif;
 }
-/* line 173, ../sass/company.scss */
+/* line 171, ../sass/company.scss */
 .person #join-us span {
   height: inherit;
   display: inline;
   color: #00c376;
   font-weight: bold;
 }
-/* line 178, ../sass/company.scss */
+/* line 176, ../sass/company.scss */
 .person #join-us span #us {
   color: #333333;
 }
-/* line 182, ../sass/company.scss */
+/* line 180, ../sass/company.scss */
 .person #join-us a {
   font-size: 0.6em;
 }
@@ -1364,7 +1410,7 @@ footer #footer_content #rights {
 /*
  * Image replacement
  */
-/* line 148, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -1373,7 +1419,7 @@ footer #footer_content #rights {
   *text-indent: -9999px;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -1384,7 +1430,7 @@ footer #footer_content #rights {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 167, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1393,7 +1439,7 @@ footer #footer_content #rights {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 176, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1409,7 +1455,7 @@ footer #footer_content #rights {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 193, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1423,7 +1469,7 @@ footer #footer_content #rights {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 206, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1439,7 +1485,7 @@ footer #footer_content #rights {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 223, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1448,7 +1494,7 @@ footer #footer_content #rights {
   /* 2 */
 }
 
-/* line 228, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1457,7 +1503,7 @@ footer #footer_content #rights {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 237, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -1478,7 +1524,7 @@ footer #footer_content #rights {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 264, ../sass/main.scss */
+  /* line 283, ../sass/main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -1487,18 +1533,18 @@ footer #footer_content #rights {
     text-shadow: none !important;
   }
 
-  /* line 272, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 276, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 280, ../sass/main.scss */
+  /* line 299, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1506,33 +1552,33 @@ footer #footer_content #rights {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 290, ../sass/main.scss */
+  /* line 309, ../sass/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 295, ../sass/main.scss */
+  /* line 314, ../sass/main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 300, ../sass/main.scss */
+  /* line 319, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 305, ../sass/main.scss */
+  /* line 324, ../sass/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 309, ../sass/main.scss */
+  /* line 328, ../sass/main.scss */
   img {
     max-width: 100% !important;
   }
@@ -1541,7 +1587,7 @@ footer #footer_content #rights {
     margin: 0.5cm;
 }
 
-  /* line 319, ../sass/main.scss */
+  /* line 338, ../sass/main.scss */
   p,
   h2,
   h3 {
@@ -1549,7 +1595,7 @@ footer #footer_content #rights {
     widows: 3;
   }
 
-  /* line 325, ../sass/main.scss */
+  /* line 344, ../sass/main.scss */
   h2,
   h3 {
     page-break-after: avoid;

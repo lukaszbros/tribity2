@@ -120,13 +120,13 @@ header {
 	#title_bar {	
 		height: 75px;	
 		position: relative;
-		font-family: $fontFamilyLogo;
+		font-family: $fontFamilyLogo;		
   		#logo, #menu {  			
 			position: absolute;
 			bottom: 10px;	
   		}
   		@media screen and (max-width: $breakBaseMenu) {
-			height: 125px;
+			height: 160px;
   			#logo, #menu {
   				width: 370px;
 				margin: auto;

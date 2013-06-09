@@ -38,14 +38,14 @@ $fontFamilyLogo: "proxima-nova",sans-serif;
 	  } 
 }
 
-@mixin image-div($imageAddress, $imageDirectory, $includeMobile:true) {
-	background-image: image-url($imageDirectory + "/" + $imageAddress);
+@mixin image-div($imageAddress, $includeMobile:true, $extension:".png") {
+	background-image: image-url($imageAddress + $extension);
 	@if $includeMobile {
-		background-image: -webkit-image-set(image_url($imageDirectory + "/" + $imageAddress) 1x, image_url($imageDirectory + "_mobile/" + $imageAddress) 2x);
+		background-image: -webkit-image-set(image_url($imageAddress + $extension) 1x, image_url($imageAddress + "@x2" + $extension) 2x);
 	}
-	max-width: image-width($imageDirectory + "/" + $imageAddress);
+	max-width: image-width($imageAddress + $extension);
 	width: 100%;
-    height: image-height($imageDirectory + "/" + $imageAddress);
+    height: image-height($imageAddress + $extension);
     background-position:center top;
 	background-repeat:no-repeat; 
 	background-size: contain;	
