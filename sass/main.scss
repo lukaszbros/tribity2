@@ -95,12 +95,95 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@import "icons/*.png";
+/*@import "icons/*.png";
 @include all-icons-sprites;
-/*@import "work/*.png";
+@import "work/*.png";
 @include all-work-sprites;
 @import "company/team/*.png";
 @include all-team-sprites;*/
+
+$icons: sprite-map("icons/*.png", $spacing: 10px);
+$icons-2x: sprite-map("icons_mobile/*.png", $spacing: 10px);
+
+.icons-apps_icon {
+	@include use-sprite("apps_icon");
+	&:hover{ 
+		@include use-sprite("apps_icon_hover");	
+	}
+}
+
+.icons-apps_icon_white {
+	@include use-sprite("apps_icon_white");
+}
+
+.icons-comment_icon {
+	@include use-sprite("comment_icon");
+	&:hover{ 
+		@include use-sprite("comment_icon_hover");	
+	}
+}
+
+.icons-dribbble {
+	@include use-sprite("dribbble");
+	&:hover{ 
+		@include use-sprite("dribbble_hover");	
+	}
+}
+
+.icons-email_icon {
+	@include use-sprite("email_icon");
+}
+
+.icons-facebook {
+	@include use-sprite("facebook");
+	&:hover{ 
+		@include use-sprite("facebook_hover");	
+	}
+}
+
+.icons-games_icon {
+	@include use-sprite("games_icon");
+	&:hover{ 
+		@include use-sprite("games_icon_hover");	
+	}
+}
+
+.icons-games_icon_white {
+	@include use-sprite("games_icon_white");
+}
+
+.icons-linkedin {
+	@include use-sprite("linkedin");
+	&:hover{ 
+		@include use-sprite("linkedin_hover");	
+	}
+}
+
+.icons-location_icon {
+	@include use-sprite("location_icon");
+}
+
+.icons-phone_icon {
+	@include use-sprite("phone_icon");
+}
+
+.icons-twitter {
+	@include use-sprite("twitter");
+	&:hover{ 
+		@include use-sprite("twitter_hover");	
+	}
+}
+
+.icons-websites_icon {
+	@include use-sprite("websites_icon");
+	&:hover{ 
+		@include use-sprite("websites_icon_hover");	
+	}
+}
+
+.icons-websites_icon_white {
+	@include use-sprite("websites_icon_white");
+}
 
 $icons: sprite-map("work/*.png", $spacing: 10px);
 $icons-2x: sprite-map("work_mobile/*.png", $spacing: 10px);
@@ -115,6 +198,10 @@ $icons-2x: sprite-map("work_mobile/*.png", $spacing: 10px);
 
 .work-work-tiles5 {
 	@include use-sprite("work-tiles5");
+}
+
+.work-work-tiles7 {
+	@include use-sprite("work-tiles7");
 }
 
 .work-work-tiles8 {
