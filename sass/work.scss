@@ -65,7 +65,7 @@
 
 #project_container {
 	padding: 50px 0 50px 0;
-	width: 902px;
+	width: 602px;
 	margin: auto;
 	@media screen and (max-width: $breakBase) {
 		width: 601px;
@@ -81,27 +81,20 @@
 	float: left;
 	padding: 10px 0 10px 0;
 	cursor: pointer;
-	&:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+	
+	width: 300px;
+	&:nth-child(1), &:nth-child(3) {
 		border-right: 1px solid $hrColor;
 	}
-	
-	@media screen and (max-width: $breakBase) {
-		width: 300px;
-		&:nth-child(2), &:nth-child(4) {
-			border-right: none;
-		}
-		&:nth-child(3) {
-			border-right: 1px solid $hrColor;
-		}
-		&:nth-child(1), &:nth-child(2) {
-			border-bottom: 1px solid $hrColor;
-		}
+	&:nth-child(1), &:nth-child(2) {
+		border-bottom: 1px solid $hrColor;
 	}
+	
 	@media screen and (max-width: $breakBaseWork) {
 		&:nth-child(1), &:nth-child(3), &:nth-child(5) {
 			border-right: none;
 		}
-		&:nth-child(5) {
+		&:nth-child(3) {
 			border-bottom: 1px solid $hrColor;
 		}
 	}
